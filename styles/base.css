@@ -71,7 +71,9 @@ main h2{
     margin-top: 13px;
     border-radius: 23px;
     border-style: ridge;
-    border-color: black;
+    border-color: black;  
+    color: black;
+
     
 }
 .card h3{
@@ -93,5 +95,6 @@ footer{
     padding-bottom: 1%;
     background-color: #90323D;
     font-family:"IM Fell French Canon SC" ;
+    color: white;
 
 }

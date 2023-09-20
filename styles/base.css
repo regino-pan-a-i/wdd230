@@ -11,6 +11,8 @@ header{
     align-items: center;
     padding-top: 3%;
     padding-bottom: 3%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     background-color:#548687;
 
 }
@@ -48,6 +50,7 @@ nav a{
 
 }
 body{
+    width: 80%;
     margin: auto;
     font-size: 20px;
     text-align: center;

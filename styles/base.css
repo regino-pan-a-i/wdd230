@@ -1,67 +1,65 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=IM+Fell+French+Canon+SC&display=swap');
 
+body{
+    max-width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 10px;
+    text-align: center;
+    font-family:"IM Fell French Canon SC" ;
+    background-color: #d2dad7;
+}
 
 header{
     display: flex;
     justify-content: center;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: .5%;
     align-items: center;
+    margin-top: 1%;
     padding-top: 3%;
     padding-bottom: 3%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     background-color:#548687;
-
 }
 
-img{
+header img{
     border-radius: 4%;
-    width: 130px;
+    width: 15%;
+    max-width: 100%;
     align-self: flex-start;
 }
 h1{
     margin-left: 2%;
     text-align: right;
-    font-family:"IM Fell French Canon SC" ;
-
 }
 nav{
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    margin-left: 2%;
-    margin-right: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
     display: flex;
     background-color: #4a494b;
-    font-family:"IM Fell French Canon SC" ;
-
+}
+nav ul{
+    list-style-type: none;
+    padding-inline-start: 0%;
+    margin-block: 0%;
+}
+nav li{
+    margin: 5px;
 
 }
-
-nav a{
+nav li a{
     color:white;
-    margin: 5px;
     text-decoration: none;
 
 }
-body{
-    width: 80%;
-    margin: auto;
-    font-size: 20px;
-    text-align: center;
-    background-color: #d2dad7;
-}
 main{
+    margin: 2em;
     display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    font-family:"IM Fell French Canon SC" ;
-
-    
+    grid-template-columns: 10% 1fr 10%;    
 }
 
 main h2{
@@ -76,8 +74,6 @@ main h2{
     border-style: ridge;
     border-color: black;  
     color: black;
-
-    
 }
 .card h3{
     margin: 0;
@@ -90,14 +86,30 @@ main h2{
     margin: 5px;
 
 }
+.card2{
+    grid-column: 2/3;
+    margin-top: 13px;
+    border-radius: 23px;
+    border-style: ridge;
+    border-color: black;  
+    color: black;
+}
+.card2 h3{
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color:#054A91;
+    color: white;
+}
+.card2 li{
+    margin: 5px;
+
+}
 footer{
     margin-top: 3%;
-    margin-left: 2%;
-    margin-right: 2%;
+  
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: #90323D;
-    font-family:"IM Fell French Canon SC" ;
     color: white;
-
 }

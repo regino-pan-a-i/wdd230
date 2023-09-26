@@ -36,7 +36,7 @@ main{
 main img{
     border-radius: 4%;
     max-height: 100%;
-    max-width: 80%;
+    max-width: 100%;
     align-items: center; /* Center items horizontally */
     
 }

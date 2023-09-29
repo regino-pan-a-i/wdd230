@@ -5,7 +5,7 @@ body{
     max-width: 100%;
     margin-left: 50px;
     margin-right: 50px;
-    font-size: 10px;
+    font-size: 17px;
     text-align: center;
     font-family:"IM Fell French Canon SC" ;
     background-color: #d2dad7;
@@ -33,6 +33,45 @@ h1{
     margin-left: 2%;
     text-align: right;
 }
+#menu {
+	display: block;
+	font-size: 1.5rem;
+	text-decoration: none;
+	background-color: #4a494b;
+	color: #eee;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a:hover, navigation a:active {
+	color: #4a494b;
+	background-color: #eee;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+@media only screen and (min-width: 700px) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	#menu {
+		display: none;
+	}
+}
 nav{
     display: flex;
     flex-direction: column; 
@@ -51,24 +90,22 @@ nav li{
     margin: 5px;
 
 }
-nav li a{
+nav a{
     color:white;
     text-decoration: none;
-
+	transition: 0.5s;
 }
 main{
     margin: 2em;
-    display: grid;
-    grid-template-columns: 10% 1fr 10%;    
+
 }
 
 main h2{
-    grid-column: 2/3;
     color: #363536;
     text-decoration: underline;
 }
 .card{
-    grid-column: 2/3;
+
     margin-top: 13px;
     border-radius: 23px;
     border-style: ridge;
@@ -87,7 +124,7 @@ main h2{
 
 }
 .card2{
-    grid-column: 2/3;
+
     margin-top: 13px;
     border-radius: 23px;
     border-style: ridge;
@@ -104,6 +141,10 @@ main h2{
 .card2 li{
     margin: 5px;
 
+}
+.frame{
+    width: 100%;
+    margin-top: 3%;
 }
 footer{
     margin-top: 3%;

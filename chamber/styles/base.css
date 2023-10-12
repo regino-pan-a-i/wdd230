@@ -80,6 +80,9 @@ header > h2 {
 	#menu {
 		display: none;
 	}
+    nav{
+        display: none;
+    }
 }
 nav{
     display: flex;

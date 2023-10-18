@@ -17,15 +17,22 @@
     <link rel="stylesheet"                  href="styles/larger.css">
     <title>Rexburg's Chamber of Commerce</title>
     <script src ="scripts/getdates.js" defer></script>
+    <script src ="scripts/darkmode.js" defer></script>
 
 </head>
 <body>
     <header>
         <h1>Rexburg's Chamber of Commerce</h1>
     </header>
-    <img src="Https://placehold.co/330x100" alt="Hero Image">
+    <div id="heroImage">
+        <img  src="images/rexburg.jpeg" alt="Hero Image">
+        <button id="callToAction">Call to action</button>
+    </div>
+    
     <a id="menu" href="#"> Menu</a>
     <nav>
+        <div><button id='darkMode'>DARK</button></div>
+
         <ul class="navigation">
             <li>
                 <a href="">Option 1</a>
@@ -46,8 +53,7 @@
     <hr />
     <main>
         
-        <p>Call to action</p>
-        <section class="current_events">
+        <section class="currentEvents">
             <h2>Current Events</h2>
             <img src="Https://placehold.co/200x200" alt="Event Image">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam modi nostrum quas aut eius aliquid velit natus numquam harum! Dicta.</p>

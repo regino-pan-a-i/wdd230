@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Event Examples</title>
+</head>
+<body>
+  <h1>JavaScript Event Examples</h1>
+
+  <!-- Click Event Example -->
+  <button id="myButton">Click me</button>
+
+  <!-- Mouseover Event Example -->
+  <div id="myElement"> Mouseover</div>
+
+  <!-- Keydown Event Example -->
+  <input type="text" id="myInput" placeholder="Press Enter key">
+
+  <!-- Submit Event Example -->
+  <form id="myForm">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Change Event Example -->
+  <input type="text" id="myInputChange" placeholder="Change me">
+
+  <!-- Load Event Example -->
+  <p>Wait for the "load" event to trigger.</p>
+
+  <!-- Resize Event Example -->
+  <p>Resize the window to trigger the "resize" event.</p>
+
+  <!-- Scroll Event Example -->
+  <p>Scroll down the page to trigger the "scroll" event.</p>
+
+  <script>
+    // JavaScript event listener examples
+    const button = document.getElementById('myButton');
+    button.addEventListener('click', function() {
+        if (button.style.backgroundColor != "red"){
+            button.style.backgroundColor = "red"
+        } else {
+            button.style.backgroundColor = "white"
+        }
+        alert('Button clicked!');
+    });
+
+    const element = document.getElementById('myElement');
+    element.addEventListener('mouseover', function() {
+        if (element.style.backgroundColor != 'lightblue'){
+            element.style.backgroundColor = 'lightblue';
+        } else {
+            element.style.backgroundColor = 'lightgreen';
+        }
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        alert('Enter key pressed!');
+        let input = document.querySelector('#myInput').value;
+
+        const newParagraph = document.createElement('p');
+        newParagraph.textContent = input;
+
+        const myInputElement = document.getElementById('myInput');
+
+        myInputElement.insertAdjacentElement('afterend', newParagraph);
+
+    }
+    });
+
+    const form = document.getElementById('myForm');
+    form.addEventListener('submit', function(event) {
+        alert('You are logged in!');
+    });
+
+    const input = document.getElementById('myInputChange');
+    input.addEventListener('change', function() {
+        alert('Input value changed:', input.value);
+    });
+
+    window.addEventListener('load', function() {
+      alert('Page has finished loading!');
+    });
+
+    window.addEventListener('resize', function() {
+      console.log('Window has been resized.');
+    });
+
+    window.addEventListener('scroll', function() {
+      console.log('Page has been scrolled.');
+    });
+  </script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #d5c2a5;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    button, input, form, p {
+        margin: 10px 0;
+    }
+
+    #myElement {
+        background-color: lightgreen;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    
+  </style>
+</body>
+</html>

@@ -31,6 +31,7 @@ body {
     font-size: 15px;
 }
 header {
+    display: flex;
     padding: 1em;
     text-align: center;
     color: var(--paragraph-color-on-color);
@@ -39,6 +40,10 @@ header {
 header > h1,
 header > h2 {
     color: var(--headline-color-on-color);
+}
+#logo{
+    max-width: 25%;
+    max-height: 25%;
 }
 
 #menu {
@@ -149,13 +154,16 @@ li{
 }
 #callToAction{
     position: absolute;
-    top: 45%;
-    left: 45%;
     background-color:var(--nav-background-color);
     border-radius: 10%;
     color: var(--headline-color-on-color);
     padding-top: .4em;
     padding-bottom: .4em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 section img{
     display: block;

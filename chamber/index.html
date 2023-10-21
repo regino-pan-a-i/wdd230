@@ -7,10 +7,10 @@
     <meta property="og:type"                content="website" >
     <meta property="og:title"               content="Rexburg's Chamber of Commerce" >
     <meta property="og:description"         content="This website will list all the local businesses and activities reported to allow residents dicover what Rexburg has to offer. " >
-    <meta property="og:image"               content="../images/ada505a4-5286-4acd-94b1-6094f68362ca.JPG" >
+    <meta property="og:image"               content="" >
     <meta name="description"                content="This website will list all the local businesses and activities reported to allow residents dicover what Rexburg has to offer. " >
     <meta name="author"                     content="Andre Regino">
-    <link rel="icon"                        href="">
+    <link rel="icon"                        href="images/favicon (1).ico">
     <link rel="stylesheet"                  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet"                  href="styles/base.css">
     <link rel="stylesheet"                  href="styles/medium.css">
@@ -18,17 +18,19 @@
     <title>Rexburg's Chamber of Commerce</title>
     <script src ="scripts/getdates.js" defer></script>
     <script src ="scripts/darkmode.js" defer></script>
+    <script src ="scripts/windchill.js" defer></script>
 
 </head>
 <body>
     <header>
+        <img id="logo" src="images/chamber.png" alt="logo">
         <h1>Rexburg's Chamber of Commerce</h1>
     </header>
     <div id="heroImage">
         <img  src="images/rexburg.jpeg" alt="Hero Image">
         <button id="callToAction">Call to action</button>
     </div>
-    
+
     <a id="menu" href="#"> Menu</a>
     <nav>
         <div><button id='darkMode'>DARK</button></div>
@@ -63,6 +65,9 @@
         <section id="weather" class="card">
             <h2>Weather</h2>
             <img src="Https://placehold.co/200x200" alt="Weather">
+            <h2>Temperature <span id = "temperature"> 50 </span></h2>
+            <p>Wind Speed <span id="windspeed">50</span> mph</p>
+            <p id= "windchill">?</p>
             <p>Lorem ipsum dolor sit amet.</p>
         </section>
         

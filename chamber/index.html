@@ -26,15 +26,18 @@
         <img id="logo" src="images/chamber.png" alt="logo">
         <h1>Rexburg's Chamber of Commerce</h1>
     </header>
-    <div id="heroImage">
-        <img  src="images/rexburg.jpeg" alt="Hero Image">
-        <button id="callToAction">Call to action</button>
+    <div class="hero">
+        <picture>
+            <source srcset="images/temp-hero-1200.webp" media="(max-width: 500px)">
+            <source srcset="images/temp-hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/temp-hero-1200.webp" alt="Hero image">
+        </picture>
+        <button>Call to action</button>
     </div>
 
     <a id="menu" href="#"> Menu</a>
     <nav>
-        <div><button id='darkMode'>DARK</button></div>
-
+        
         <ul class="navigation">
             <li>
                 <a href="">Option 1</a>
@@ -48,6 +51,9 @@
             <li>
                 <a href="">Option 4</a>
             </li>
+            <li>
+                <div><button id='darkMode'>DARK</button></div>
+            </li>
         </ul>
         
         
@@ -57,30 +63,46 @@
         
         <section class="currentEvents">
             <h2>Current Events</h2>
-            <img src="Https://placehold.co/200x200" alt="Event Image">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam modi nostrum quas aut eius aliquid velit natus numquam harum! Dicta.</p>
+            <img src="images/fall-festival.webp" alt="Event Image">
+            <h3>Fall Festival</h3>
+            <p>Celebrate the beauty of autumn at our Fall Festival! Join us this Sunday Oct 29th for a day of family fun. Enjoy a pumpkin patch, hot cider, live music, and more. Admission is $10 , with kids under 8 getting in for free. For event details. Don't miss this fantastic fall celebration!</p>
         </section>
         <hr />
         
         <section id="weather" class="card">
             <h2>Weather</h2>
-            <img src="Https://placehold.co/200x200" alt="Weather">
-            <h2>Temperature <span id = "temperature"> 50 </span></h2>
+            <img src="images/weather.webp" alt="Weather">
+            <h3>Temperature <span id = "temperature"> 50 </span></h3>
             <p>Wind Speed <span id="windspeed">50</span> mph</p>
             <p id= "windchill">?</p>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Snow expected for this Thursday.</p>
         </section>
         
         <hr />
         <section class="spotlights">
             <h2>Spotlights</h2>
             <ul>
-                <img src="Https://placehold.co/200x200" alt="Spotlight">
-                <li>Lorem ipsum dolor sit.</li>
-                <img src="Https://placehold.co/200x200" alt="Spotlight">
-                <li>Lorem ipsum dolor sit.</li>
-                <img src="Https://placehold.co/200x200" alt="Spotlight">
-                <li>Lorem ipsum dolor sit.</li>
+                <section>
+                    <img src="images/alpine-jewelers.webp" alt="Spotlight">
+                    <h3>Alpine Jewelers</h3>
+                    <li>Address: 7 W Main St, Rexburg, ID 83440 </li>
+                    <li>Hours: Mon-Sat 10 AM - 7 PM </li>
+                    <li>Phone: (208) 359-9776</li>
+                </section>
+                <section>
+                    <img src="images/Family-Crisis-Center.webp" alt="Spotlight">
+                    <h3>Family Crisis Center</h3>
+                    <li>Address: 16 E Main St, Rexburg, ID 83440</li>
+                    <li>Hours: Mon-Sat 8 AM - 4:30 PM</li>
+                    <li>Phone: (208) 356-0065</li>
+                </section>
+                <section>
+                    <img src="images/romance-theater.webp" alt="Spotlight">
+                    <h3>Romance Theater</h3>
+                    <li>Address: 2 E Main St, Rexburg, ID 83440</li>
+                    <li>Website: https://www.rexburgarts.org/romance</li>
+                    <li>Phone: (208) 372-2481</li>
+                </section>
             </ul>
 
         </section>

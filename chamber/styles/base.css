@@ -147,7 +147,10 @@ li{
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
 } 
-.hero{
+
+.hero{  
+    width: 100%;
+    text-align: center;
     position: relative;
 }
 .hero img{

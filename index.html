@@ -16,6 +16,8 @@
     <link rel="stylesheet"                  href="styles/larger.css">
     <title>Andre Regino - WDD 230 - Web Frontend Development</title>
     <script src ="scripts/getdates.js" defer></script>
+    <script src ="scripts/windchill.js" defer></script>
+    <script src ="scripts/site-visits.js" defer></script>
 
 </head>
 <body>
@@ -98,9 +100,17 @@
 
             </ol>
         </section>
-        <section class="card2">
+        <section id="weather"class="card2">
             <h3>Information</h3>
+            <h2>Weather</h2>
+            <!-- <img src="images/weather.webp" alt="Weather"> -->
+            <h4>Temperature <span id = "temperature"> 50 </span></h4>
+            <p>Wind Speed <span id="windspeed">50</span> mph</p>
+            <p id= "windchill">?</p>
+            <p>Snow expected for this Thursday.</p>
+            <p>Visit count: <span id="visitCount"></span></p>
         </section>
+        
         <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d220046.50501384606!2d-99.13011914329478!3d19.436993091173036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695764863196!5m2!1sen!2sus" width="600" height="450"  loading="lazy" ></iframe>
     </main>
     <footer>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                 content="https://regino-pan-a-i.github.io/wdd230/" >
+    <meta property="og:type"                content="Website" >
+    <meta property="og:title"               content="Andre Regino - WDD 230 - Web Frontend Development" >
+    <meta property="og:description"         content="WDD 230 - Web Frontend Development, Andre Regino, This is the home page for all assignments in this class." >
+    <meta property="og:image"               content="/images/ada505a4-5286-4acd-94b1-6094f68362ca.webp" >
+    <meta name="description"                content="WDD 230 - Web Frontend Development, Andre Regino, This is the home page for all assignments in this class.">
+    <meta name="author"                     content="Andre Regino">
+    <link rel="icon"                        href="favicon.ico">
+    <link rel="stylesheet"                  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"                  href="styles/base.css">
+    <link rel="stylesheet"                  href="styles/larger.css">
+    <link rel="stylesheet"                  href="styles/form.css">
+    <title>Andre Regino - WDD 230 - Web Frontend Development</title>
+    <script src ="scripts/form.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/ada505a4-5286-4acd-94b1-6094f68362ca.webp" alt="">
+        <h1>Andre Regino</h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav> 
+        <ul class="navigation">
+            <!-- you can sorround each element with a UL tag as LI items -->
+            <li>
+                <a id="home" href="#">Home</a>
+            </li>
+            <li>
+                <a id="siteplan" href="lesson03/chamber-site-plan.html">Site Plan</a>
+            </li>
+            <li>
+                <a id="chamber" href="chamber/index.html">Chamber</a>
+            </li>
+            <li>
+                <a id="byui" href="https://www.byui.edu/">BYU - IDAHO</a>
+            </li>
+            <li>
+                <a id="scripture" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng&id=p19#p19">Scripture</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="form-main">
+        <form action="">
+            <fieldset>
+                <p>
+                    <span id="message"></span>
+                </p>
+                <label>Username: <input id="username" name="username" type="text" required ></label>
+                <label>Password: <input id="password" name="password" type="password" required pattern="[\w]{8,}"></label>
+                <label>Confirm: <input id="password" name="password" type="password" required></label>
+                <label>Email: <input id="email" name="email" type="email" required pattern="[\w\.]+@byui\.edu$" placeholder="******@byui.edu" title="Please enter a valid email address"></label>
+                <label>Range: <span id="currentRating">1</span><input id="range" name="range" type="range" min="1" max="10" step="1" value="1" list="sliderValues"></label>
+                <datalist id="sliderValues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <button>CLOSE THE DEAL</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p id="currentYear"></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        
+    </footer>
+
+</body>
+</html>

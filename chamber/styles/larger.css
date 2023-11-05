@@ -24,4 +24,27 @@
         grid-template-rows: 2fr 2fr;
     }
     
+    main{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .sidebar{
+        grid-column: 1/2;
+        background-color: var(--accent2-color);
+        padding: .5em;
+    }
+    .rightSide{
+        grid-column: 2/3;
+        padding: 1em;
+    }
+    .rightSide img:hover{
+        width: 650px;
+        height: 650px;
+        transition: 1s;
+    }
+    .rightSide img:not(:hover){
+        width: 600px;
+        height: 600px;
+        transition-duration: .5s;
+    }
 }

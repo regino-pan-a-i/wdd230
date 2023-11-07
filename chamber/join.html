@@ -20,6 +20,7 @@
     <script src ="scripts/darkmode.js" defer></script>
     <script src ="scripts/windchill.js" defer></script>
     <script src ="scripts/site-visits.js" defer></script>
+    <script src ="scripts/join.js" defer></script>
 
 </head>
 <body>
@@ -55,21 +56,18 @@
         
         <form method="get" action="thankyou.html">
             <fieldset>
-                <label>First Name <input id="firstName" name="firstName" type="text" required></label>
-                <label>Last Name <input id="firstName" name="firstName" type="text" required></label>
-                <label>Title or position <input type="text" name="title" id="title" pattern="[a-zA-Z - ]{7, }"></label>
-                <label>Email Address <input type="email" name="email" id="email" required placeholder="example@email.com"></label>
-                <label>Mobile Phone <input type="telephone" name="telephone" id="telephone" required></label>
-                <label>Bussiness/Organization Name <input type="text" name="organization" id="organization" required></label>
-                <label>Memebership Level 
-                    <select id="membership" name="membership">
-                    <option value="NP">NP Membership (No Fee)</option>
-                    <option value="Bronze">Bronze Membership</option>
-                    <option value="Silver">Silver Membership</option>
-                    <option value="Gold">Gold Membership</option>
-                  </select>
-                </label>
-                <label>Business/Organization description <input type="text area" name="description" id="description"></label>
+                <label class="myInput">First Name <input id="firstName" name="firstName" type="text" required></label>
+                <label class="myInput">Last Name <input id="lastName" name="lasttName" type="text" required></label>
+                <label class="myInput">Title or position <input type="text" name="title" id="title" pattern="[a-zA-Z\s\-]{7,}"></label>
+                <label class="myInput">Email Address <input type="email" name="email" id="email" required placeholder="example@email.com"></label>
+                <label class="myInput">Mobile Phone <input type="telephone" name="telephone" id="telephone" required></label>
+                <label class="myInput">Bussiness/Organization Name <input type="text" name="organization" id="organization" required></label>
+                <h3>Membership Level</h3>
+                <label class="myRadio"><input type="radio" name="level" value="nonprofit">NP Membership (No Fee)</label>
+                <label class="myRadio"><input type="radio" name="level" value="Bronze">Bronze Membership</label>
+                <label class="myRadio"><input type="radio" name="level" value="Silver">Silver Membership</label>
+                <label class="myRadio"><input type="radio" name="level" value="Gold">Gold Membership</label>
+                <label>Business/Organization description <input type="text area" name="description" id="description" placeholder="Describe Here"></label>
                 <input type="hidden" name="timestamp" id="timestamp">
                 <button>Join now</button>
 

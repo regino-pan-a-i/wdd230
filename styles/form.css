@@ -1,3 +1,9 @@
+:root{
+    --invalid-color : 3px 3px 3px red; 
+    --valid-color : 3px 3px 3px green;
+    --submit-button: #90323D; 
+}
+
 form{
     text-align: left;
 }
@@ -25,14 +31,14 @@ label{
 button{
     font-size: 1.5rem;
     color: white;
-    background-color: red;
+    background-color: var(--submit-button);
     padding: .5rem;
     margin: 1rem 0;
 }
 
 input:valid{
-    box-shadow: 3px 3px 3px green;
+    box-shadow: var(--valid-color);
 }
 input:invalid{
-    box-shadow: 3px 3px 3px red;
+    box-shadow: var(--invalid-color);
 }

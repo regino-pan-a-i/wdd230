@@ -6,16 +6,16 @@
     <meta property="og:url"                 content="https://regino-pan-a-i.github.io/wdd230/" >
     <meta property="og:type"                content="Website" >
     <meta property="og:title"               content="Andre Regino - WDD 230 - Web Frontend Development" >
-    <meta property="og:description"         content="WDD 230 - Web Frontend Development, Andre Regino, This is the home page for all assignments in this class." >
+    <meta property="og:description"         content="WDD 230 - Web Frontend Development, Andre Regino, Form build assignment." >
     <meta property="og:image"               content="/images/ada505a4-5286-4acd-94b1-6094f68362ca.webp" >
-    <meta name="description"                content="WDD 230 - Web Frontend Development, Andre Regino, This is the home page for all assignments in this class.">
+    <meta name="description"                content="WDD 230 - Web Frontend Development, Andre Regino, Form build assignment.">
     <meta name="author"                     content="Andre Regino">
     <link rel="icon"                        href="favicon.ico">
     <link rel="stylesheet"                  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet"                  href="styles/base.css">
     <link rel="stylesheet"                  href="styles/larger.css">
     <link rel="stylesheet"                  href="styles/form.css">
-    <title>Andre Regino - WDD 230 - Web Frontend Development</title>
+    <title>Andre Regino - WDD 230 - Form Build Assignment</title>
     <script src ="scripts/form.js" defer></script>
 
 </head>
@@ -46,14 +46,14 @@
         </ul>
     </nav>
     <main id="form-main">
-        <form action="">
+        <form method="get" action="record.html">
             <fieldset>
                 <p>
                     <span id="message"></span>
                 </p>
                 <label>Username: <input id="username" name="username" type="text" required ></label>
                 <label>Password: <input id="password" name="password" type="password" required pattern="[\w]{8,}"></label>
-                <label>Confirm: <input id="password" name="password" type="password" required></label>
+                <label>Confirm: <input id="confirm" name="confirm" type="password" required></label>
                 <label>Email: <input id="email" name="email" type="email" required pattern="[\w\.]+@byui\.edu$" placeholder="******@byui.edu" title="Please enter a valid email address"></label>
                 <label>Range: <span id="currentRating">1</span><input id="range" name="range" type="range" min="1" max="10" step="1" value="1" list="sliderValues"></label>
                 <datalist id="sliderValues">
@@ -68,7 +68,7 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </datalist>
-                <button>CLOSE THE DEAL</button>
+                <button>CLOSE THE DEAl</button>
             </fieldset>
         </form>
     </main>

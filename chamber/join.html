@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                 content="https://regino-pan-a-i.github.io/wdd230/" >
+    <meta property="og:type"                content="website" >
+    <meta property="og:title"               content="Rexburg's Chamber of Commerce" >
+    <meta property="og:description"         content="This website will list all the local businesses and activities reported to allow residents dicover what Rexburg has to offer. " >
+    <meta property="og:image"               content="" >
+    <meta name="description"                content="This website will list all the local businesses and activities reported to allow residents dicover what Rexburg has to offer. " >
+    <meta name="author"                     content="Andre Regino">
+    <link rel="icon"                        href="images/favicon (1).ico">
+    <link rel="stylesheet"                  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"                  href="styles/base.css">
+    <link rel="stylesheet"                  href="styles/medium.css">
+    <link rel="stylesheet"                  href="styles/larger.css">
+    <title>Rexburg's Chamber of Commerce</title>
+    <script src ="scripts/getdates.js" defer></script>
+    <script src ="scripts/darkmode.js" defer></script>
+    <script src ="scripts/windchill.js" defer></script>
+    <script src ="scripts/site-visits.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/chamber.png" alt="logo">
+        <h1>Rexburg's Chamber of Commerce</h1>
+    </header>
+    <a id="menu" href="#"> Menu</a>
+    <nav>
+        
+        <ul class="navigation">
+            <li>
+                <a href="">Option 1</a>
+            </li>
+            <li>
+                <a href="">Option 2</a>
+            </li>
+            <li>
+                <a href="">Option 3 </a>
+            </li>
+            <li>
+                <a href="">Option 4</a>
+            </li>
+            <li>
+                <div><button id='darkMode'>DARK</button></div>
+            </li>
+        </ul>
+        
+        
+    </nav>
+    <hr />
+    <main>
+        
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <label>First Name <input id="firstName" name="firstName" type="text" required></label>
+                <label>Last Name <input id="firstName" name="firstName" type="text" required></label>
+                <label>Title or position <input type="text" name="title" id="title" pattern="[a-zA-Z - ]{7, }"></label>
+                <label>Email Address <input type="email" name="email" id="email" required placeholder="example@email.com"></label>
+                <label>Mobile Phone <input type="telephone" name="telephone" id="telephone" required></label>
+                <label>Bussiness/Organization Name <input type="text" name="organization" id="organization" required></label>
+                <label>Memebership Level 
+                    <select id="membership" name="membership">
+                    <option value="NP">NP Membership (No Fee)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                  </select>
+                </label>
+                <label>Business/Organization description <input type="text area" name="description" id="description"></label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <button>Join now</button>
+
+            </fieldset>
+        </form>
+    </main>
+    <hr />
+
+    <footer>
+        <p>Andre Regino</p>
+        <p>reg21003@byui.edu</p>
+        <p>WDD-230 </p>
+        <p id="currentYear"></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

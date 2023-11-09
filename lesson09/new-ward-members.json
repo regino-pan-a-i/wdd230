@@ -1,0 +1,40 @@
+{"moveIns":
+[
+    
+    {
+        "name"          : "Regino",
+        "moveInDate"    :  "2021/09/09",
+        "familySize"    : 5,
+        "visited"       : false,
+        "members"       : [
+            {
+                "name"      : "Andre",
+                "gender"    : "M",
+                "birthdate" : "2000/10/24"
+            },
+            {
+                "name"      : "Andrea",
+                "gender"    : "F",
+                "birthdate" : "1995/06/03"
+            },
+            {
+                "name"      : "Claudia",
+                "gender"    : "F",
+                "birthdate" : "2007/05/08"
+            },
+            {
+                "name"      : "Adriana",
+                "gender"    : "F",
+                "birthdate" : "1969/12/16"
+            },
+            {
+                "name"      : "Carlos",
+                "gender"    : "M",
+                "birthdate" : "1971/04/28"
+            }
+        ]
+    
+    }
+]
+
+}

@@ -1,0 +1,54 @@
+{   "members":
+    [
+
+        {"name"         : "Family Crisis Center",
+        "address"       : "16 E Main St, Rexburg, ID 83440",
+        "phone"         : "(208) 356-0065",
+        "websiteURL"    : "https://familycrisiscenter.wixsite.com/familycrisiscenter",
+        "imageURL"      : "./images/Family-Crisis-Center.webp",
+        "level"         : ""
+        },
+        {"name"         : "Jensen Jewelers",
+        "address"       : "505 N 2nd E, Rexburg, ID 8344",
+        "phone"         : "(208) 656-0200",
+        "websiteURL"    : "https://jensen-jewelers.com/",
+        "imageURL"      : "./images/jensenjewelers.webp",
+        "level"         : ""
+        },
+        {"name"         : "Paramount 5",
+        "address"       : "38 S Center St, Rexburg, ID 83440",
+        "phone"         : "(208) 356-7469",
+        "websiteURL"    : "https://rexburgmovies.com/paramount-5",
+        "imageURL"      : "./images/paramount5.webp",
+        "level"         : ""
+        },
+        {"name"         : "Romance Theater",
+        "address"       : "2 E Main St, Rexburg, ID 83440",
+        "phone"         : "(208) 372-2481",
+        "websiteURL"    : "https://www.rexburgarts.org/",
+        "imageURL"      : "./images/romance-theater.webp",
+        "level"         : ""
+        },
+        {"name"         : "Brigham Young University - Idaho",
+        "address"       : "525 S Center St, Rexburg ID, 83460",
+        "phone"         : "(208)-496-1411",
+        "websiteURL"    : "https://www.byui.edu/",
+        "imageURL"      : "./images/byui.webp",
+        "level"         : ""
+        },
+        {"name"         : "Casa de Ochoa",
+        "address"       : "383 S 2nd W ste b, Rexburg, ID 83440",
+        "phone"         : "(208) 357-4250",
+        "websiteURL"    : "https://www.casadeochoa.com/menu",
+        "imageURL"      : "./images/casaochoa.webp",
+        "level"         : ""
+        },
+        {"name"         : "Rexburg Rapids",
+        "address"       : "50 W 2nd N, Rexburg, ID 83440",
+        "phone"         : "(208) 372-2490",
+        "websiteURL"    : "https://www.rexburgrapids.com/",
+        "imageURL"      : "./images/RexburgRapid.webp",
+        "level"         : ""
+        }
+    ]
+}

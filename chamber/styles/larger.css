@@ -24,9 +24,19 @@
         grid-template-rows: 2fr 2fr;
     }
     
-    main{
+    #discovermain, #joinmain{
         display: grid;
         grid-template-columns: 1fr 3fr;
+    }
+
+    #joinform{
+        grid-column: 1/2;
+    }
+    
+    #joinmembership{
+        margin-left: 3rem;
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
     .sidebar{
         grid-column: 1/2;

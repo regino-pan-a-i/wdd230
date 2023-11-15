@@ -209,29 +209,33 @@ button{
     margin: 1rem 0;
 }
 
+#joinmembership{
+    padding-left: 2rem;
+    border: grey 2px solid;
+}
+
 /* Directory Page Styling*/
 
 
 .grid{
-    
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.directoryCard{
+.grid .directoryCard{
     text-align: center;
     border: 3px black solid;
     border-radius: 3%;
-    margin: 3rem;
+    margin: 1rem;
     padding: 3rem;
     background-color: var(--accent2-color);
 }
 
-.directoryCard img{
-    width: 200px;
+.grid .directoryCard img{
+    width: 100%;
 }
 
-.directoryCard a{
+.grid .directoryCard a{
     text-decoration: none;
     padding: 2%;
     color: var(--nav-link-color);
@@ -242,10 +246,49 @@ button{
 
 }
 
-.directoryCard p {
-    margin: 0%;
+.grid .directoryCard p {
+    margin: 1%;
+    padding: 2%;
 }
-.directoryCard a:hover{
+.grid .directoryCard a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list img{
+    display: none;
+}
+
+.list section{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.list section:nth-child(even){
+    background-color: var(--accent2-color);
+}
+
+.list section:nth-child(even) h3, p, a {
+    margin: 0%;
+    padding: 0%;
+    padding-left: 1rem;
+}
+.list section h3 {
+    color: black;
+	font-size: 1.5rem;
+}
+
+.list .directoryCard{
+    padding: 1rem;
+}
+
+.list .directoryCard a{
+    text-decoration: underline;
+    color: black; 
 }

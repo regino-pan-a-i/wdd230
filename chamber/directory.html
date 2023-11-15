@@ -17,6 +17,7 @@
     <link rel="stylesheet"                  href="styles/larger.css">
     <title>Rexburg's Chamber of Commerce</title>
     <script src ="scripts/darkmode.js" defer></script>
+    <script src ="scripts/hamburgerMenu.js" defer></script>
     <script src ="scripts/directory.js" defer></script>
 
 </head>
@@ -49,12 +50,12 @@
         
         
     </nav>
-    <hr />
-    <main id="directorymain">
-        <div>
-            <button id="gridbutton">GRID</button> 
-            <button id="listbutton">LIST</button>
+    <main id="directoryMain">
+        <div class="optionButtons">
+            <button class="active" id="gridButton">GRID</button> 
+            <button class="inactive" id="listButton">LIST</button>
         </div>
+        <hr />
         <div id="members" class="grid"></div>
         
     </main>

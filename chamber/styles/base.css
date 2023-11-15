@@ -216,6 +216,23 @@ button{
 
 /* Directory Page Styling*/
 
+.optionButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.optionButtons button{
+    margin: 1rem;
+}
+
+.active{
+    background-color: var(--accent2-color);
+}
+
+.inactive{
+    background-color: var(--accent1-color);
+    color: var(--paragraph-color-on-white);
+}
 
 .grid{
     display: grid;
@@ -229,6 +246,7 @@ button{
     margin: 1rem;
     padding: 3rem;
     background-color: var(--accent2-color);
+    position: relative;
 }
 
 .grid .directoryCard img{
@@ -242,8 +260,10 @@ button{
     border: 2px black solid;
     border-radius: 5%;
     background-color: var(--nav-background-color);
-
-
+    position:absolute;
+    bottom: 2%; /* Adjust the percentage to your liking */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .grid .directoryCard p {

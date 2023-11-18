@@ -24,6 +24,10 @@
         grid-template-rows: 2fr 2fr;
     }
     
+    #homeMain{
+        display: block;
+    }
+
     #discovermain, #joinmain{
         display: grid;
         grid-template-columns: 1fr 3fr;

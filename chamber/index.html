@@ -21,6 +21,7 @@
     <script src ="scripts/darkmode.js" defer></script>
     <script src ="scripts/windchill.js" defer></script>
     <script src ="scripts/site-visits.js" defer></script>
+    <script src ="../scripts/weather.js" defer></script>
 
 </head>
 <body>
@@ -30,16 +31,16 @@
     </header>
     <div class="hero">
         <picture>
-            <source srcset="images/temp-hero-small.webp" media="(max-width: 500px)">
-            <source srcset="images/temp-hero-medium.webp" media="(max-width: 1000px)">
-            <img src="images/temp-hero-1200.webp" alt="Hero image">
+            <source srcset="images/rexburg-small.webp" media="(max-width: 500px)">
+            <source srcset="images/rexburg-medium.webp" media="(max-width: 1000px)">
+            <img src="images/rexburg.webp" alt="Hero image">
         </picture>
-        <button>Call to action</button>
+        <button>Become a Memeber Now</button>
     </div>
     
     <nav>
         <div><button id='darkMode'>DARK</button></div>
-        <a id="menu" href="#"> Menu</a>
+        <button id="menu" href="join.html"> Menu</button>
         
         <ul class="navigation">
             <li>
@@ -53,60 +54,74 @@
             </li>
             <li>
                 <a href="directory.html">Directory</a>
-            </li>
-           
-            
-        </ul>
-        
-        
+            </li>                      
+        </ul>               
     </nav>
     <hr />
     <main id="homeMain">
         
-        <section class="currentEvents">
-            <h2>Current Events</h2>
-            <img src="images/fall-festival.webp" alt="Event Image">
-            <h3>Fall Festival</h3>
-            <p>Celebrate the beauty of autumn at our Fall Festival! Join us this Sunday Oct 29th for a day of family fun. Enjoy a pumpkin patch, hot cider, live music, and more. Admission is $10 , with kids under 8 getting in for free. For event details. Don't miss this fantastic fall celebration!</p>
+        <section id="currentEvents" class="card">
+            <h2>Current and Upcomming Events</h2>
+            <div class="event">
+                <h3>Thanksgiving Parade</h3>
+                <img src="images/fall-festival.webp" alt="Fall Festival">
+                <p>Celebrate the beauty of autumn at our Thanksgiving Parade! Join us this Thursday Nov 23rd for a day of family fun. Enjoy a pumpkin patch, hot cider, live music, and more. Admission is $10 , with kids under 8 getting in for free. For event details. Don't miss this fantastic fall celebration!</p>
+            </div>
+            <div class="event">
+                <h3>Light the World</h3>
+                <img src="images/light-the-world.webp" alt="Light the World">
+                <p>Join us in this anual worldwide inittiative to celebrate the 24 days leading up to Christmas in a special way. Do one act of kindness every day for 24 days starting December 1st and rediscover the meaning of Christmas.</p>                
+            </div>
+            <div class="event">
+                <h3>Christmas Around the World</h3>
+                <img src="images/byui-christmas.webp" alt="BYUI Christmas Concert">
+                <p>Welcome the Christmas season with BYU-I's greatest concert of the year. A BYU-Idaho Christmas Around The World, with special guest Adassa from Disney's Encanto. Join us on December 2nd at 6pm in the BYU-I Center. </p>                
+            </div>
         </section>
         <hr />
         
         <section id="weather" class="card">
             <h2>Weather</h2>
-            <img src="images/weather.webp" alt="Weather">
+            <img src="images/weather.webp" alt="Weather" id="tempImage">
             <h3>Temperature <span id = "temperature"> 50 </span></h3>
             <p>Wind Speed <span id="windspeed">50</span> mph</p>
             <p id= "windchill">?</p>
-            <p>Snow expected for this Thursday.</p>
+            <p id="tempText">Snow expected for this Thursday.</p>
             <p>Visit count: <span id="visitCount"></span></p>
         </section>
         
         <hr />
-        <section class="spotlights">
+        <section id="spotlights" class="card">
             <h2>Spotlights</h2>
-            <ul>
+            <div class="spotlights">
                 <section>
                     <img src="images/alpine-jewelers.webp" alt="Spotlight">
                     <h3>Alpine Jewelers</h3>
-                    <li>Address: 7 W Main St, Rexburg, ID 83440 </li>
-                    <li>Hours: Mon-Sat 10 AM - 7 PM </li>
-                    <li>Phone: (208) 359-9776</li>
+                    <ul>
+                        <li>Address: 7 W Main St, Rexburg, ID 83440 </li>
+                        <li>Hours: Mon-Sat 10 AM - 7 PM </li>
+                        <li>Phone: (208) 359-9776</li>
+                    </ul>
                 </section>
                 <section>
                     <img src="images/Family-Crisis-Center.webp" alt="Spotlight">
                     <h3>Family Crisis Center</h3>
-                    <li>Address: 16 E Main St, Rexburg, ID 83440</li>
-                    <li>Hours: Mon-Sat 8 AM - 4:30 PM</li>
-                    <li>Phone: (208) 356-0065</li>
+                    <ul>
+                        <li>Address: 16 E Main St, Rexburg, ID 83440</li>
+                        <li>Hours: Mon-Sat 8 AM - 4:30 PM</li>
+                        <li>Phone: (208) 356-0065</li>
+                    </ul>
                 </section>
                 <section>
                     <img src="images/romance-theater.webp" alt="Spotlight">
                     <h3>Romance Theater</h3>
-                    <li>Address: 2 E Main St, Rexburg, ID 83440</li>
-                    <li>Website: https://www.rexburgarts.org/romance</li>
-                    <li>Phone: (208) 372-2481</li>
+                    <ul>
+                        <li>Address: 2 E Main St, Rexburg, ID 83440</li>
+                        <li>Website: https://www.rexburgarts.org/romance</li>
+                        <li>Phone: (208) 372-2481</li>
+                    </ul>
                 </section>
-            </ul>
+            </div>
 
         </section>
     </main>

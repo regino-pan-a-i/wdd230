@@ -33,7 +33,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: .5em;
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
 }
@@ -63,6 +63,7 @@ header > h2 {
 
 .navigation li {
 	display: none;
+    margin: 1.5em;
 }
 .navigation a:hover, .navigation a:active {
     color: var(--nav-hover-link-color);
@@ -75,10 +76,11 @@ header > h2 {
 
 nav{
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     align-items: center; 
     padding-top: 1%;
     padding-bottom: 1%;
+    padding-left: .8%;
     margin: auto;
     background-color: var(--nav-background-color);
 }
@@ -89,13 +91,8 @@ nav ul{
     margin-block: 0%;
 }
 
-nav li{
-    margin: 5px;
-
-}
-
 nav a{
-    padding: 1em;
+    /* margin: .5em; */
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
@@ -139,19 +136,19 @@ li{
 }
 
 .hero img{
+    /* position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); */
     width: 100%;
 
 }
 
 .hero button{
     position: absolute;
-    top: 50%;
+    top: 50%; 
     left: 50%;
-    background-color:var(--nav-background-color);
-    border-radius: 10%;
-    color: var(--headline-color-on-color);
-    padding: .5rem;
-    font-size: 1rem;
+    transform: translateX(-50%);    
 }
 
 #callToAction{
@@ -163,9 +160,22 @@ li{
     padding-bottom: .4em;
 }
 
+.card {
+    margin: 2em;
+}
+
 section img{
     display: block;
     margin: 0 auto;
+}
+
+#weather p{
+    margin: .5em;
+    padding: 1%;
+}
+#weather img{
+    width: 100px;
+    height: 100px;
 }
 
 .spotlights li{
@@ -193,11 +203,15 @@ label{
 }
 
 button{
-    font-size: 1.5rem;
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
+}
+
+#formButton{
+    font-size: 1.5rem;
     padding: .5rem;
     margin: 1rem 0;
+
 }
 
 #joinmembership{
@@ -285,7 +299,7 @@ button{
     background-color: var(--accent2-color);
 }
 
-.list section:nth-child(even) h3, p, a {
+.list section:nth-child(even) .list h3, .list p, .list a {
     margin: 0%;
     padding: 0%;
     padding-left: 1rem;

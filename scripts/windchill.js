@@ -15,9 +15,12 @@ function showWindChill(temp, speed){
     windChillSpan.textContent = "Wind Chill " + message;
 }
 
-const temperatureSpan = document.getElementById("temperature");
-const windspeedSpan = document.getElementById("windspeed");
-const tepmerature = parseInt(temperatureSpan.textContent);
-const windspeed = parseInt(windspeedSpan.textContent);
+function getElements(){
+    const temperatureSpan = document.getElementById("temperature");
+    const windspeedSpan = document.getElementById("windspeed");
+    const tepmerature = parseInt(temperatureSpan.textContent);
+    const windspeed = parseInt(windspeedSpan.textContent);
+    showWindChill(tepmerature, windspeed);
+}
 
-showWindChill(tepmerature, windspeed)
+setTimeout(getElements(),100);

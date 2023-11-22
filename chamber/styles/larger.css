@@ -1,5 +1,14 @@
 @media only screen and (min-width: 900px ){
 
+    nav ul {
+        width: 80%;
+		display: flex;
+	}
+	nav ul li {
+        text-align: center;
+		flex: 1 1 100%;
+	}
+
     body{
         font-size: 20px;
     }
@@ -18,7 +27,7 @@
         max-height: 20em;
     }
 
-    .spotlights ul{
+    .spotlights {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-rows: 2fr 2fr;

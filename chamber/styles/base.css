@@ -198,7 +198,7 @@ input{
     display: block;
     padding: .5rem;
     font-size: 1.1rem;
-    width: 30rem;
+    width: auto;
 }
 
 label{
@@ -219,8 +219,23 @@ button{
 }
 
 #joinmembership{
-    padding-left: 2rem;
+    margin: 3%;
+    padding: 2rem;
     border: grey 2px solid;
+}
+
+#joinform{
+    margin: 3%;
+}
+
+.myRadio{
+    display: flex;
+    align-items: baseline;
+    padding: 1%;
+}
+
+.myRadio input{
+    margin: 2%;
 }
 
 /* Directory Page Styling*/

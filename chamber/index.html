@@ -20,27 +20,32 @@
     <script src ="scripts/hamburgerMenu.js" defer></script>
     <script src ="scripts/darkmode.js" defer></script>
     <script src ="scripts/windchill.js" defer></script>
-    <script src ="scripts/site-visits.js" defer></script>
     <script src ="../scripts/weather.js" defer></script>
+    <script src ="scripts/banner.js" defer></script>
 
 </head>
 <body>
     <header>
-        <img id="logo" src="images/chamber.png" alt="logo">
+        <img id="logo" src="images/chamber-logo.webp" alt="logo">
         <h1>Rexburg's Chamber of Commerce</h1>
     </header>
+    <section id="banner">
+        <a id="bannerButton" href="#">X</a>
+        <p id="bannerParagraph">Chamber of Commerce Meet and Greet</p>
+        <p id="bannerParagraph">Wednesday at 7:00 p.m.</p>
+    </section>
     <div class="hero">
         <picture>
             <source srcset="images/rexburg-small.webp" media="(max-width: 500px)">
             <source srcset="images/rexburg-medium.webp" media="(max-width: 1000px)">
             <img src="images/rexburg.webp" alt="Hero image">
         </picture>
-        <button>Become a Memeber Now</button>
+        <a href="join.html">Become a Memeber</a>
     </div>
     
     <nav>
         <div><button id='darkMode'>DARK</button></div>
-        <button id="menu" href="join.html"> Menu</button>
+        <a id="menu" > Menu</a>
         
         <ul class="navigation">
             <li>
@@ -81,13 +86,16 @@
         <hr />
         
         <section id="weather" class="card">
-            <h2>Weather</h2>
-            <img src="images/weather.webp" alt="Weather" id="tempImage">
-            <h3>Temperature <span id = "temperature"> 50 </span></h3>
-            <p>Wind Speed <span id="windspeed">50</span> mph</p>
-            <p id= "windchill">?</p>
-            <p id="tempText">Snow expected for this Thursday.</p>
-            <p>Visit count: <span id="visitCount"></span></p>
+            <div class="currentWeather">
+                <h2>Weather</h2>
+                <img src="images/weather.webp" alt="Weather" id="tempImage">
+                <h3>Temperature <span id = "temperature"> 50 </span></h3>
+                <p>Wind Speed <span id="windspeed">50</span> mph</p>
+                <p id= "windchill">?</p>
+                <p id="tempText">Snow expected for this Thursday.</p>
+                <p>Visit count: <span id="visitCount"></span></p>
+            </div>
+        
         </section>
         
         <hr />

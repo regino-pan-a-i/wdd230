@@ -10,7 +10,6 @@ let forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&l
 const ONE_DAY = 24 * 60 * 60 * 1000
 
 function getTemperature(temps){
-    console.log(temps);
     let temp = temps.main.temp;
     let tempText = temps.weather[0].description;
     let tempImgCode = temps.weather[0].icon;
@@ -29,16 +28,63 @@ function getTemperature(temps){
 
 
 
-function getForecast(temps, timeStamp){
+function getForecast(temps){
     console.log(temps);
-    let day = new Date(timeStamp);
-
-    let high = temps.filter(function(temp) {
-        return (temp.dt_txt < day.getTime() ? true : false )
-    }).reduce(function (current, next){
-        return (next.main.temp > current.main.temp ? next : current)
+    let days = []
+    let today = new Date();
+    for (let i = 0; i < 3; i++){
+        today = new Date(today.getTime() + ONE_DAY);
+        let newDay = today.toISOString().slice(0, 10);
+        days.push(newDay);
+    }
+    let high = days.map(function(day){
+        return temps.filter(function(temp) {
+            return temp.dt_txt.startsWith(day);
+        }).reduce(function (current, next){
+            return (current.main.temp > next.main.temp ? current : next)
+        })
     })
-    console.log(`High ${high}`)
+
+    let low = days.map(function(day){
+        return temps.filter(function(temp) {
+            return temp.dt_txt.startsWith(day);
+        }).reduce(function (current, next){
+            return (current.main.temp < next.main.temp ? current : next)
+        })
+    })
+    console.log(high)
+    createForcast(high, low);
+}
+
+function createForcast(high, low){
+    let card = document.getElementById('weather');
+    let div = document.createElement('div');
+    div.classList.add('forecastWeather');
+    let divHTML = `
+        <h2>Three Day Forecast</h2>
+        <section>
+        <h3>${high[0].dt_txt}</h3>
+        <img src="https://openweathermap.org/img/wn/${high[0].weather[0].icon}.png">
+        <p>${high[0].weather[0].description}</p>
+        <p>High: ${high[0].main.temp}</p>
+        <p>Low: ${low[0].main.temp}</p>
+        </section>
+        <section>
+        <h3>${high[1].dt_txt}</h3>
+        <img src="https://openweathermap.org/img/wn/${high[1].weather[0].icon}.png">
+        <p>${high[1].weather[0].description}</p>
+        <p>High: ${high[1].main.temp}</p>
+        <p>Low: ${low[1].main.temp}</p>
+        </section>
+        <section>
+        <h3>${high[2].dt_txt}</h3>
+        <img src="https://openweathermap.org/img/wn/${high[2].weather[0].icon}.png">
+        <p>${high[2].weather[0].description}</p>
+        <p>High: ${high[2].main.temp}</p>
+        <p>Low: ${low[2].main.temp}</p>
+        </section>`;
+    div.innerHTML = divHTML;
+    card.appendChild(div);
 }
 
 async function fetchCurrent(){
@@ -53,13 +99,8 @@ async function fetchForecast(){
     const response = await fetch(forecastURL);
     if (response.ok){
         const data = await response.json();
-        let today = new Date()
-        getForecast(data.list, today.getTime() + ONE_DAY)
-        getForecast(data.list, today.getTime() + ONE_DAY + ONE_DAY)
-        getForecast(data.list, today.getTime() + ONE_DAY + ONE_DAY + ONE_DAY)
-    } else{
-        console.log("WHAT IS HAPPENING???")
-    }
+        getForecast(data.list);
+    } 
 }
 
 fetchCurrent()

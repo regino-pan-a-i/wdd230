@@ -3,16 +3,13 @@
     body{
         font-size: 20px;
     }
-    /* nav a:hover {
-        color: var(--nav-hover-link-color);
-        background-color: var(--nav-hover-background-color);
-    } */
+  
     .navigation {
 		display: flex;
 	}
 
 	.navigation li {
-		display: block; /* change state in small view */
+		display: block;
 		flex: 1 1 100%;
 	}
 
@@ -28,5 +25,17 @@
         padding-bottom: 1%;
         margin: auto;
         background-color: var(--nav-background-color);
+    }
+
+    .forecastWeather{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10em, 1fr;
+        padding: 2%;
+        border: black solid 1px;
+    }
+    .forecastWeather section{
+        padding: 2%;
+        border: black dashed .5px ;
     }
 }

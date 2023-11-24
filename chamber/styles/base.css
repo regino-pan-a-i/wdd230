@@ -37,11 +37,10 @@ header {
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
 }
+
 header img{
-    width: 20%;
-    display: block;
-    margin: 2rem;
-    border-radius: 10px;
+    width: 15%;
+    margin: 1rem;
 }
 header > h1,
 header > h2 {
@@ -49,7 +48,7 @@ header > h2 {
 }
 
 #menu {
-	font-size: 1.5rem;
+	font-size: 1rem;
     color: var(--paragraph-color-on-color);
 }
 
@@ -65,7 +64,7 @@ header > h2 {
 	display: none;
     margin: 1.5em;
 }
-.navigation a:hover, .navigation a:active {
+.navigation a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
@@ -92,11 +91,12 @@ nav ul{
 }
 
 nav a{
-    /* margin: .5em; */
     min-width: 120px;
     text-decoration: none;
-    padding: 10px;
-	transition: 0.5s;
+    padding: 10px;	
+    transition: 0.5s;
+    font-weight: bolder;
+
 }
 
 nav a:link, nav a:visited {
@@ -136,20 +136,24 @@ li{
 }
 
 .hero img{
-    /* position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); */
     width: 100%;
-
+    height: 50%;
 }
 
-.hero button{
+.hero a{
     position: absolute;
     top: 50%; 
     left: 50%;
     transform: translateX(-50%);    
+    text-decoration: none;
+    padding: 1%;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+    border: #601700 solid 2px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 1)
 }
+
 
 #callToAction{
     position: absolute;
@@ -316,4 +320,40 @@ button{
 .list .directoryCard a{
     text-decoration: underline;
     color: black; 
+}
+
+/* Banner */
+
+#banner{
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-weight: bolder;
+    background-color: var(--accent2-color);
+    
+
+}
+
+#bannerButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+#banner p{
+    grid-column: 2/3;
+    padding: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show{
+    display: none;
 }

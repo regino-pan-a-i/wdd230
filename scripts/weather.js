@@ -29,7 +29,6 @@ function getTemperature(temps){
 
 
 function getForecast(temps){
-    console.log(temps);
     let days = []
     let today = new Date();
     for (let i = 0; i < 3; i++){
@@ -52,7 +51,6 @@ function getForecast(temps){
             return (current.main.temp < next.main.temp ? current : next)
         })
     })
-    console.log(high)
     createForcast(high, low);
 }
 

@@ -6,3 +6,11 @@ button.addEventListener('click', () => {
         banner.style.display = 'none';
     }
 });
+
+const currentDay =  new Date();
+
+if (currentDay.getDay() > 0 && currentDay.getDay() < 4){
+    banner.style.display = 'grid';
+} else{
+    banner.style.display = 'none';
+}

@@ -8,6 +8,7 @@ darkmode.addEventListener('click', ()=>{
         document.documentElement.style.setProperty('--accent1-color', '#0F1E22');
         document.documentElement.style.setProperty('--accent2-color', '#38060B');
         document.documentElement.style.setProperty('--nav-hover-background-color', '#962705');
+        document.documentElement.style.setProperty('--headline-color-on-white', 'white');
         
         bodyel.style.backgroundColor = '#04395E';
         bodyel.style.color = 'white'
@@ -19,6 +20,7 @@ darkmode.addEventListener('click', ()=>{
         document.documentElement.style.setProperty('--accent2-color', '#601600b2');
         document.documentElement.style.setProperty('--nav-hover-link-color', 'white');
         document.documentElement.style.setProperty('--nav-hover-background-color', '#601700');
+        document.documentElement.style.setProperty('--headline-color-on-white', '#601700');
         bodyel.style.backgroundColor = 'white';
         bodyel.style.color = 'black'
         

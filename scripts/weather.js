@@ -57,30 +57,32 @@ function getForecast(temps){
 function createForcast(high, low){
     let card = document.getElementById('weather');
     let div = document.createElement('div');
-    div.classList.add('forecastWeather');
     let divHTML = `
         <h2>Three Day Forecast</h2>
-        <section>
-        <h3>${high[0].dt_txt}</h3>
-        <img src="https://openweathermap.org/img/wn/${high[0].weather[0].icon}.png">
-        <p>${high[0].weather[0].description}</p>
-        <p>High: ${high[0].main.temp}</p>
-        <p>Low: ${low[0].main.temp}</p>
+        <section class="forecastWeather">
+            <section>
+            <h3>${high[0].dt_txt}</h3>
+            <img src="https://openweathermap.org/img/wn/${high[0].weather[0].icon}.png">
+            <p>${high[0].weather[0].description}</p>
+            <p>High: ${high[0].main.temp}</p>
+            <p>Low: ${low[0].main.temp}</p>
+            </section>
+            <section>
+            <h3>${high[1].dt_txt}</h3>
+            <img src="https://openweathermap.org/img/wn/${high[1].weather[0].icon}.png">
+            <p>${high[1].weather[0].description}</p>
+            <p>High: ${high[1].main.temp}</p>
+            <p>Low: ${low[1].main.temp}</p>
+            </section>
+            <section>
+            <h3>${high[2].dt_txt}</h3>
+            <img src="https://openweathermap.org/img/wn/${high[2].weather[0].icon}.png">
+            <p>${high[2].weather[0].description}</p>
+            <p>High: ${high[2].main.temp}</p>
+            <p>Low: ${low[2].main.temp}</p>
+            </section>
         </section>
-        <section>
-        <h3>${high[1].dt_txt}</h3>
-        <img src="https://openweathermap.org/img/wn/${high[1].weather[0].icon}.png">
-        <p>${high[1].weather[0].description}</p>
-        <p>High: ${high[1].main.temp}</p>
-        <p>Low: ${low[1].main.temp}</p>
-        </section>
-        <section>
-        <h3>${high[2].dt_txt}</h3>
-        <img src="https://openweathermap.org/img/wn/${high[2].weather[0].icon}.png">
-        <p>${high[2].weather[0].description}</p>
-        <p>High: ${high[2].main.temp}</p>
-        <p>Low: ${low[2].main.temp}</p>
-        </section>`;
+            `;
     div.innerHTML = divHTML;
     card.appendChild(div);
 }

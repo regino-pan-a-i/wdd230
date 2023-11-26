@@ -4,51 +4,58 @@
         {"name"         : "Family Crisis Center",
         "address"       : "16 E Main St, Rexburg, ID 83440",
         "phone"         : "(208) 356-0065",
+        "hours"         : "Mon-Fri 8 AM - 4:30 PM",
         "websiteURL"    : "https://familycrisiscenter.wixsite.com/familycrisiscenter",
         "imageURL"      : "./images/Family-Crisis-Center.webp",
-        "level"         : ""
+        "level"         : "Silver"
         },
         {"name"         : "Jensen Jewelers",
         "address"       : "505 N 2nd E, Rexburg, ID 8344",
         "phone"         : "(208) 656-0200",
+        "hours"         : "Mon-Sat 10 AM - 8 PM",
         "websiteURL"    : "https://jensen-jewelers.com/",
         "imageURL"      : "./images/jensenjewelers.webp",
-        "level"         : ""
+        "level"         : "Silver"
         },
         {"name"         : "Paramount 5",
         "address"       : "38 S Center St, Rexburg, ID 83440",
         "phone"         : "(208) 356-7469",
+        "hours"         : "Mon-Sat 10 AM - 10 PM",
         "websiteURL"    : "https://rexburgmovies.com/paramount-5",
         "imageURL"      : "./images/paramount5.webp",
-        "level"         : ""
+        "level"         : "Golden"
         },
         {"name"         : "Romance Theater",
         "address"       : "2 E Main St, Rexburg, ID 83440",
         "phone"         : "(208) 372-2481",
+        "hours"         : "Mon-Sat 10 AM - 10 PM",
         "websiteURL"    : "https://www.rexburgarts.org/",
         "imageURL"      : "./images/romance-theater.webp",
-        "level"         : ""
+        "level"         : "Bronze"
         },
         {"name"         : "Brigham Young University - Idaho",
         "address"       : "525 S Center St, Rexburg ID, 83460",
         "phone"         : "(208)-496-1411",
+        "hours"         : "Mon-Sat 7 AM - 10 PM",
         "websiteURL"    : "https://www.byui.edu/",
         "imageURL"      : "./images/byui.webp",
-        "level"         : ""
+        "level"         : "NP membership"
         },
         {"name"         : "Casa de Ochoa",
         "address"       : "383 S 2nd W ste b, Rexburg, ID 83440",
         "phone"         : "(208) 357-4250",
+        "hours"         : "Mon-Sat 10 AM - 9 PM",
         "websiteURL"    : "https://www.casadeochoa.com/menu",
         "imageURL"      : "./images/casaochoa.webp",
-        "level"         : ""
+        "level"         : "Golden"
         },
         {"name"         : "Rexburg Rapids",
         "address"       : "50 W 2nd N, Rexburg, ID 83440",
         "phone"         : "(208) 372-2490",
+        "hours"         : "Closed for the Season",
         "websiteURL"    : "https://www.rexburgrapids.com/",
         "imageURL"      : "./images/RexburgRapid.webp",
-        "level"         : ""
+        "level"         : "Silver"
         }
     ]
 }

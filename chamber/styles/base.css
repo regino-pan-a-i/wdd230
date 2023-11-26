@@ -323,18 +323,14 @@ button{
     padding: 0%;
     padding-left: 1rem;
 }
-.list section h3 {
-    color: black;
-	font-size: 1.5rem;
-}
+
 
 .list .directoryCard{
     padding: 1rem;
 }
 
 .list .directoryCard a{
-    text-decoration: underline;
-    color: black; 
+    color: var(--headline-color-on-white); 
 }
 
 /* Banner */
@@ -369,3 +365,9 @@ button{
     justify-content: center;
 }
 
+/* Dynamic spotlight */
+
+.spotlights img{
+    width: 300px;
+    height: 200px;
+}

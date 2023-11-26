@@ -193,6 +193,10 @@ footer {
     background-color: var(--paragraph-background-color);
 }
 
+.sidebar img{
+    width: 350px;
+}
+
 /* Form Styling */
 input{
     display: block;

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                 content="https://regino-pan-a-i.github.io/wdd230/" >
+    <meta property="og:type"                content="Website" >
+    <meta property="og:title"               content="Andre Regino - Bountiful Foods" >
+    <meta property="og:description"         content="Fruit bags and drinks business in California">
+    <meta property="og:image"               content="images/so-cal.webp" >
+    <meta name="description"                content="Fruit bags and drinks business in California">
+    <meta name="author"                     content="Andre Regino">
+    <link rel="icon"                        href="images/favicon.ico">
+    <link rel="stylesheet"                  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"                  href="styles/base.css">
+    <link rel="stylesheet"                  href="styles/medium.css">
+    <link rel="stylesheet"                  href="styles/large.css">
+    <title>Andre Regino - Bountiful Foods</title>
+    <script src ="scripts/common.js" defer ></script>
+    <script src ="scripts/home.js" defer ></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Bountiful Foods logo">
+        <h1>BOUNTIFUL FOODS</h1>
+        <a id="menu" href="#">≡</a>      
+    </header>
+    <nav id="mainNav" class="noShow">
+        <a id="menuClose" href="#">X</a>
+        <div class="navContent">
+            <a href="index.html">HOME</a>
+            <a href="order.html">ORDER</a>
+            <a href="about.html">ABOUT US</a>
+        </div>
+    </nav>
+    <main id="orderMain">
+        <form action="get">
+            <label class="myInput">First Name <input id="firstName" name="firstName" type="text" required></label>
+            <label class="myInput">Email <input id="email" name="email" type="email" required placeholder="example@email.com"></label>
+            <label class="myInput">Mobile Phone <input id="phone" type="telephone" name="telephone"  required></label>
+            <h3>Choose up to three ingredients</h3>
+            <section class="ingredients">
+
+            </section>
+            <label class="myInput">Special Order Instructions <input id="instructions" type="textarea" name="instructions"  required></label>
+        </form>
+        <p>All payment must be done at the pick up stand∫/p>
+
+    </main>
+    <footer>
+        <p>Bountiful Foods</p>
+        <p>bfoodscali@gmail.com</p>
+        <p>Phone number: 669-721-1488</p>
+
+        <a href="--">Include a resource/attribution section in the footer that references outside content used in your site.  At minimum that will include references to www.fruityvice.com Links to an external site.and openweathermap.orgLinks to an external site.</a>
+        <a href="--">Social media links (at least three) (no account necessary).</a>
+        <p id="currentYear"></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+@media screen and (min-width:585px ){
+    /* HEADER */
+    header{
+        justify-content: left;
+    }
+    header img{
+        margin-left: 15px;
+        width: auto;
+    }
+
+    /* NAVIGATION */
+    .noShow{
+        display: flex;
+    }
+    #menuClose{
+        display: none;
+    }
+    #menu{
+        display: none
+    }
+    nav{
+        flex-direction: row;
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: none;
+    }
+    .navContent{
+        flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+    .navContent a{
+        font-size: 1rem;
+        transition: none;
+        padding: 1%;
+        margin: auto
+    }
+
+    .navContent a:hover{
+        background-color: #4a494b;
+        color: white;
+        border-radius: 14%;
+    }
+    /* MAIN */
+    main{
+        display: grid;
+        grid-template-columns: minmax(500px, 1fr) 1fr;
+    }
+}

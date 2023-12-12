@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                 content="https://regino-pan-a-i.github.io/wdd230/" >
+    <meta property="og:type"                content="Website" >
+    <meta property="og:title"               content="Andre Regino - Bountiful Foods" >
+    <meta property="og:description"         content="Fruit bags and drinks business in California">
+    <meta property="og:image"               content="images/so-cal.webp" >
+    <meta name="description"                content="Fruit bags and drinks business in California">
+    <meta name="author"                     content="Andre Regino">
+    <link rel="icon"                        href="images/favicon.ico">
+    <link rel="stylesheet"                  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"                  href="styles/base.css">
+    <link rel="stylesheet"                  href="styles/medium.css">
+    <link rel="stylesheet"                  href="styles/large.css">
+    <title>Andre Regino - Bountiful Foods</title>
+    <script src ="scripts/common.js" defer ></script>
+    <script src ="scripts/home.js" defer ></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Bountiful Foods logo">
+        <h1>BOUNTIFUL FOODS</h1>
+        <a id="menu" href="#">≡</a>      
+    </header>
+    <nav id="mainNav" class="noShow">
+        <a id="menuClose" href="#">X</a>
+        <div class="navContent">
+            <a href="index.html">HOME</a>
+            <a href="order.html">ORDER</a>
+            <a href="about.html">ABOUT US</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <picture>
+            <source srcset="images/drinks-small.webp" media="(max-width: 584px)">
+            <source srcset="images/drinks-medium.webp" media="(max-width: 900px)">
+            <img src="images/drinks.webp" alt="Sunset at the beach">
+        </picture>
+        <a href="order.html">Get a drink now</a>
+    </div>
+
+    <main>
+        <div class="info">
+            <h2>La Jolla Shores</h2>
+            <section >
+                <p>Nestled along the picturesque coastline of Southern California, La Jolla stands as a sun-kissed gem, offering a perfect blend of coastal charm and vibrant energy. With its stunning beaches, upscale boutiques, and renowned cultural attractions, La Jolla is a destination that captivates the senses. As the sun gracefully bathes the palm-lined streets in warmth, there's no better way to enhance the experience than by indulging in a refreshing fruit drink. Imagine sipping on a tantalizing blend of tropical flavors while basking in the golden glow of the California sun. Our company, committed to delivering the epitome of taste and quality, invites you to elevate your La Jolla experience with our irresistible fruit drinks. Crafted to complement the sunny weather and embody the spirit of this coastal paradise, our beverages are a perfect companion for those seeking a taste of pure refreshment. Join us in savoring the essence of La Jolla – a place where every sip becomes a delightful celebration of the sun-soaked lifestyle.</p>
+                <img src="images/chill-drink.webp" alt="La Jolla Shores">
+            </section>
+        </div>
+        <div>
+            <h2>Current Weather</h2>
+            <section id="weather">
+                <div class="currentWeather card">
+                    <img src="#" alt="Weather" id="tempImage">
+                    <p>Temperature: <span id = "temperature">  </span></p>
+                    <p>Description: <span id="tempText"></span></p>
+                    <p>Humidity: <span id="tempHum"></span></p>
+                </div>
+            
+            </section>
+        </div>
+
+        <h2>Your Orders</h2>
+        <section id="userOrders" class="card">
+            <p>Include an information card about the total number of specialty drinks that the current user has submitted from the Order Drink page form. This information should just be stored locally, with the user's agent (browser).</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>Bountiful Foods</p>
+        <p>bfoodscali@gmail.com</p>
+        <p>Phone number: 669-721-1488</p>
+
+        <a href="--">Include a resource/attribution section in the footer that references outside content used in your site.  At minimum that will include references to www.fruityvice.com Links to an external site.and openweathermap.orgLinks to an external site.</a>
+        <a href="--">Social media links (at least three) (no account necessary).</a>
+        <p id="currentYear"></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

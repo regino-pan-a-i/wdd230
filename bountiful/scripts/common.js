@@ -1,5 +1,25 @@
 /* NAVIGATION BAR */
 
+// Wayfinding
+document.addEventListener("DOMContentLoaded", function() {
+	// Get the current page URL
+	var currentPageUrl = window.location.href;
+
+	// Check if the user is on the home page
+	if (currentPageUrl.toString().includes("index")) {
+		// Add a class to the home button to change its color
+		document.getElementById("home").setAttribute("id", "active")
+	}
+	else if (currentPageUrl.toString().includes("order")) {
+		// Add a class to the home button to change its color
+		document.getElementById("order").setAttribute("id", "active")
+	}
+	else if (currentPageUrl.toString().includes("about")) {
+		// Add a class to the home button to change its color
+		document.getElementById("about").setAttribute("id", "active")
+	}
+});
+
 
 //HAMBURGER MENU: 
 const navbar = document.querySelector('#mainNav')

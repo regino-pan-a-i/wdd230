@@ -86,6 +86,12 @@ nav{
     transition:  1s ;
 }
 
+#active {
+    background-color: #4a494b;
+    color: white;
+    border-radius: 14%;
+}
+
 /* HERO IMAGE*/
 .hero{
     position: relative;
@@ -147,6 +153,12 @@ footer {
     text-align: center;
     color: var(--paragraph-color-on-color);
     background-color: var(--contrast-color);
+}
+
+#social img{
+    max-width: 50px;
+    border-radius: 10%;
+    margin: .5rem;
 }
 
 /* ORDER PAGE MAIN */

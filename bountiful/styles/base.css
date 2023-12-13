@@ -143,3 +143,27 @@ footer {
     color: var(--paragraph-color-on-color);
     background-color: var(--contrast-color);
 }
+
+/* ORDER PAGE MAIN */
+
+form{
+    padding: 3%;
+    text-align: left;
+}
+
+input, section {
+    display: block;
+    padding: .5rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.textInput{
+    font-size: 1.1rem;
+    width: 18rem;
+}
+#ingredients{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    row-gap: 10%;
+}

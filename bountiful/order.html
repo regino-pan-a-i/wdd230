@@ -5,19 +5,19 @@
     <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
     <meta property="og:url"                 content="https://regino-pan-a-i.github.io/wdd230/" >
     <meta property="og:type"                content="Website" >
-    <meta property="og:title"               content="Andre Regino - Bountiful Foods" >
-    <meta property="og:description"         content="Fruit bags and drinks business in California">
+    <meta property="og:title"               content="Bountiful Foods - Order Page" >
+    <meta property="og:description"         content="Get your favorite combination of fruits in a single cup">
     <meta property="og:image"               content="images/so-cal.webp" >
-    <meta name="description"                content="Fruit bags and drinks business in California">
+    <meta name="description"                content="Get your favorite combination of fruits in a single cup">
     <meta name="author"                     content="Andre Regino">
     <link rel="icon"                        href="images/favicon.ico">
     <link rel="stylesheet"                  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet"                  href="styles/base.css">
     <link rel="stylesheet"                  href="styles/medium.css">
     <link rel="stylesheet"                  href="styles/large.css">
-    <title>Andre Regino - Bountiful Foods</title>
+    <title>PLace an order - Bountiful Foods</title>
     <script src ="scripts/common.js" defer ></script>
-    <script src ="scripts/home.js" defer ></script>
+    <script src ="scripts/order.js" defer ></script>
 
 </head>
 <body>
@@ -35,17 +35,17 @@
         </div>
     </nav>
     <main id="orderMain">
-        <form action="get">
-            <label class="myInput">First Name <input id="firstName" name="firstName" type="text" required></label>
-            <label class="myInput">Email <input id="email" name="email" type="email" required placeholder="example@email.com"></label>
-            <label class="myInput">Mobile Phone <input id="phone" type="telephone" name="telephone"  required></label>
-            <h3>Choose up to three ingredients</h3>
-            <section class="ingredients">
-
-            </section>
-            <label class="myInput">Special Order Instructions <input id="instructions" type="textarea" name="instructions"  required></label>
+        <h2>Start your order</h2>
+        <form action="thankyou.html" method="get" class="card">
+            <label class="myInput">First Name <input class="textInput" id="firstName" name="firstName" type="text" required placeholder="John"></label>
+            <label class="myInput">Email <input class="textInput" id="email" name="email" type="email" required placeholder="example@email.com"></label>
+            <label class="myInput">Mobile Phone <input class="textInput" id="phone" type="telephone" name="telephone"  required placeholder="555-555-5555"></label>
+            <h3>Choose three fruits</h3>
+            <section id="ingredients" name="fruits"></section>
+            <label class="myInput">Special Order Instructions <input id="instructions" type="textarea" name="instructions" required placeholder="Type your request here"></label>
+            <input type="submit" value="Buy now">
         </form>
-        <p>All payment must be done at the pick up stand∫/p>
+        <p>All payment must be done at the pick up stand</p>
 
     </main>
     <footer>

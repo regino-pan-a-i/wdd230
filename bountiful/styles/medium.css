@@ -50,8 +50,14 @@
         grid-template-columns: minmax(500px, 1fr) 1fr;
     }
 
-    /* form{
-        padding: 3%;
-        text-align: left;
-    } */
+    .info img{
+        width: 60%;
+    }
+
+    /* CONFIRMATION MAIN*/
+    #confirmationMain{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+    }
 }

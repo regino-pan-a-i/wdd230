@@ -15,7 +15,7 @@
     <link rel="stylesheet"                  href="styles/base.css">
     <link rel="stylesheet"                  href="styles/medium.css">
     <link rel="stylesheet"                  href="styles/large.css">
-    <title>PLace an order - Bountiful Foods</title>
+    <title>Place an order - Bountiful Foods</title>
     <script src ="scripts/common.js" defer ></script>
     <script src ="scripts/order.js" defer ></script>
 
@@ -39,10 +39,10 @@
         <form action="thankyou.html" method="get" class="card">
             <label class="myInput">First Name <input class="textInput" id="firstName" name="firstName" type="text" required placeholder="John"></label>
             <label class="myInput">Email <input class="textInput" id="email" name="email" type="email" required placeholder="example@email.com"></label>
-            <label class="myInput">Mobile Phone <input class="textInput" id="phone" type="telephone" name="telephone"  required placeholder="555-555-5555"></label>
+            <label class="myInput">Mobile Phone <input class="textInput" id="phone" type="tel" name="telephone"  required placeholder="555-555-5555"></label>
             <h3>Choose three fruits</h3>
-            <section id="ingredients" name="fruits"></section>
-            <label class="myInput">Special Order Instructions <input id="instructions" type="textarea" name="instructions" required placeholder="Type your request here"></label>
+            <section id="ingredients"></section>
+            <label class="myInput">Special Order Instructions <textarea id="instructions" type="text" name="instructions" placeholder="Type your request here"></textarea> </label>
             <input type="submit" value="Buy now">
         </form>
         <p>All payment must be done at the pick up stand</p>

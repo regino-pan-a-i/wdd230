@@ -17,6 +17,7 @@
     <link rel="stylesheet"                  href="styles/large.css">
     <title>Confrimation Page - Bountiful Foods</title>
     <script src ="scripts/common.js" defer ></script>
+    <script src ="scripts/thankyou.js" defer ></script>
     
 
 </head>
@@ -34,18 +35,41 @@
             <a href="about.html">ABOUT US</a>
         </div>
     </nav>
-    <main id="confrimationMain">
-        <div id="confirmation">
+    <main id="confirmationMain">
+        <div>
+            <h2>Your order</h2>
+            <section id="confirmation" class="card">
+
+                <p>Thanks <span id="name"></span></p>
+                <p>Your drink will have:</p>
+                <span id="drinkContent"></span>
+                <p>Additional instructions:</p>
+                <span id="instructions"></span>            
+            </section>
+        </div>
+        <div>
+            <h2>Nutritional Info</h2>
+            <section id="nutritionInfo" class="card">
+
+            </section>
+        </div>
+        <div>
+            <h2>Order Details</h2>
+            <section id="details" class="card">
+                <p>Date ordered: <span id="orderDate"></span></p>
+                <p>Hour ordered: <span id="orderHour"></span></p>
+                <p>Email for your order: <span id="orderEmail"></span></p>
+                <hr>
+                <p>In case of any delays or cancelations call this number <span></span></p>
+                    
+            </section>
 
         </div>
-        <div id="nutritionInfo">
+        <div>
+            <h3>Like our products? Share with your friends</h3>
+            <section id="review" class="card">
 
-        </div>
-        <div id="details">
-
-        </div>
-        <div id="review">
-            
+            </section>
         </div>
         
     </main>

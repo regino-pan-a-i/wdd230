@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 :root{
     --primary-color : #FF7B7B;
     --secondary-color: #7DC4FA;
@@ -16,7 +16,7 @@ body{
 
 h1, h2, h3, h4, h5, h5, h6{
     text-align: center;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bolder;
     
 }
@@ -33,7 +33,7 @@ header img{
     width: 30%;
 }
 header h1{
-    font-size: 1.5rem;
+    font-size: 5rem;
     margin: auto;
 }
 
@@ -100,9 +100,6 @@ nav{
 
 .hero img{
     width: 100%;
-    /* width: auto; */
-    /* max-width: 100%; */
-    /* max-height: 30vh; */
 }
 
 .hero a{
@@ -128,6 +125,7 @@ main{
 }
 
 .card{
+    padding: 2%;
     margin-top: 13px;
     border-radius: 10px;
     border-style: ridge;
@@ -136,7 +134,9 @@ main{
     color: var(--contrast-color);
 }
 
+
 .info img {
+    display: block;
     max-width: 300px;
     width: 80%;
     height: 80%;
@@ -144,18 +144,41 @@ main{
     margin-bottom: 3%;
 }
 
+.info a{
+    text-decoration: none;
+    padding: 1%;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--secondary-color);
+    border: var(--secondary-color) solid 2px;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 1)
+}
 
+ul{
+    padding: 0%;
+    list-style: none;
+}
+
+.infoCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /* FOOTER */
 
 footer {
     margin-top:3%;
     padding: 1em;
     text-align: center;
-    color: var(--paragraph-color-on-color);
+    color: white;
     background-color: var(--contrast-color);
 }
+footer a{
+    color: white;
+}
 
-#social img{
+.social{
     max-width: 50px;
     border-radius: 10%;
     margin: .5rem;
@@ -165,10 +188,10 @@ footer {
 
 form{
     padding: 3%;
-    text-align: left;
+    text-align: center;
 }
 
-input, section {
+input {
     display: block;
     padding: .5rem;
     margin-top: 2%;
@@ -176,14 +199,62 @@ input, section {
 }
 .textInput{
     font-size: 1.1rem;
-    width: 18rem;
+    width: 20rem;
 }
-#ingredients{
+
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+#ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    padding: 1%;
+    margin: 1%;
+}
+
+#submit{
+    border-radius: 10px;
+    background-color: var(--comp-color-2);
+}
+
+/* CONFIRMATION */
+
+.card2 {
+    height: 250px;
+}
+
+#review{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2%;
-    row-gap: 10%;
+    grid-template-rows: 60px 1fr;
+}
+#review p{
+    grid-column: 1/3;
+
 }
 
-/* ORDER PAGE MAIN */
+/* ABOUT US MAIN  */
 
+#aboutMain img{
+    margin-top: 5%;
+    width: 80%;
+}
+#carlsbad{
+    display: flex;
+    flex-direction: column;
+}
+
+iframe{
+    margin-top: 5%;
+    padding: 0%;
+    margin-left: 2rem;
+    margin-right: 5rem;
+    width: 350px;
+    height: 300px;
+}

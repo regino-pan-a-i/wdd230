@@ -17,7 +17,6 @@
     <link rel="stylesheet"                  href="styles/large.css">
     <title>Place an order - Bountiful Foods</title>
     <script src ="scripts/common.js" defer ></script>
-    <script src ="scripts/order.js" defer ></script>
 
 </head>
 <body>
@@ -35,8 +34,55 @@
         </div>
     </nav>
     <main id="aboutMain">
-       
-
+        
+        <div id="story">
+            <picture>
+                <source srcset="images/carlsbad2-small.webp" media="(max-width: 729px)">
+                <source srcset="images/carlsbad2-medium.webp" media="(max-width: 1000px)">
+                <img src="images/carlsbad2.webp" alt="Carlsbad Shore" loading="lazy">
+            </picture>
+            <div class="info">
+                <h1>Who we are</h1>
+                <p>In the heart of Southern California, our fruit drink business thrives amidst the sun-soaked landscapes and coastal allure.
+                    Rooted in a passion for blending taste with the West Coast spirit, we meticulously craft each bottle to capture the essence 
+                    of SoCal's golden vibes, sourcing the freshest blueberries, guavas, and peaches.</p>
+                <h1>Our Mission</h1>
+                <p>Our mission is simple yet profound — to offer a sip of Southern California in every bottle. We strive to create drinks that 
+                    embody the region's diverse cultures, celebrating its rich agricultural abundance. From beachside gatherings to urban cafes, 
+                    our fruit drinks have become synonymous with the SoCal lifestyle, spreading the taste of sun, surf, and laid-back living to 
+                    all who seek a moment of bliss.</p>
+                <h1>Our Core Values</h1>
+                <p>Our mission is simple yet profound — to offer a sip of Southern California in every bottle. We strive to create drinks that 
+                    embody the region's diverse cultures, celebrating its rich agricultural abundance. From beachside gatherings to urban cafes,
+                    our fruit drinks have become synonymous with the SoCal lifestyle, spreading the taste of sun, surf, and laid-back living to 
+                    all who seek a moment of bliss.</p>
+                <h1>Our Vision</h1>
+                <p>Looking ahead, our vision is to be more than just a beverage provider; we aim to be the embodiment of Southern California's 
+                    refreshing spirit. We envision expanding our reach, bringing the taste of SoCal to every corner, and becoming a symbol of 
+                    laid-back luxury. With innovation and a commitment to evolving tastes, our vision is to continually captivate palates and 
+                    inspire a deeper appreciation for the sun-soaked flavors that define our beloved region. Cheers to a future where every sip 
+                    is a journey into the heart of Southern California's vibrant essence.</p>
+            </div>
+        </div>
+        <div id="carlsbad">
+            <h1>Carlsbad</h1>
+            <p>Carlsbad, located in Southern California, is a coastal city renowned for its picturesque landscapes and laid-back 
+                atmosphere. Nestled along the Pacific Ocean, Carlsbad boasts stunning sandy beaches that draw residents and visitors 
+                alike. The city is known for its charming village atmosphere, offering a blend of boutique shops, delightful 
+                restaurants, and cultural attractions. </p> 
+            <p>Visitors can explore the historic Carlsbad Village, where tree-lined streets 
+                and Spanish-style architecture create a quaint and inviting ambiance. In addition to its coastal charm, Carlsbad is 
+                celebrated for its family-friendly attractions. LEGOLAND California Resort, a popular theme park built entirely from 
+                LEGO bricks, adds a playful touch to the city's character. Carlsbad is also famous for its flower fields, particularly
+                the Carlsbad</p>
+            <picture>
+                <source srcset="images/carlsbad1-small.webp" media="(max-width: 729px)">
+                <source srcset="images/carlsbad1-medium.webp" media="(max-width: 1000px)">
+                <img src="images/carlsbad1.webp" alt="Carlsbad Shore" loading="lazy">
+            </picture>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53464.43453170078!2d-117.32900149563066!3d33.12151277129275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1702518217582!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
     </main>
     <footer>
         <p>Bountiful Foods</p>
@@ -45,11 +91,19 @@
             <p>Phone number: 669-721-1488</p>
         </div>
         <div id="social">
-            <a href="https://www.facebook.com"><img src="images/fb.webp" alt="facebook" loading="lazy"></a>
-            <a href="https://www.instagram.com"><img src="images/insta.webp" alt="instagram" loading="lazy"></a>
-            <a href="https://www.youtube.com"><img src="images/youtube.webp" alt="instagram" loading="lazy"></a>
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com"><img src="images/fb.webp" alt="facebook" loading="lazy" class="social"></a>
+            <a href="https://www.instagram.com"><img src="images/insta.webp" alt="instagram" loading="lazy" class="social"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.webp" alt="instagram" loading="lazy" class="social"></a>
         </div>
-        <a href="--">Include a resource/attribution section in the footer that references outside content used in your site.  At minimum that will include references to www.fruityvice.com Links to an external site.and openweathermap.orgLinks to an external site.</a>
+        <div>
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="https://www.fruityvice.com">Fruity Vice</a></li>
+                <li><a href="https://www.openweathermap.org">Open Weather</a></li>
+                <li><a href="https://visitcarlsbad.com/">Visit Carlsbad</a></li>
+            </ul>
+        </div>
         <p id="currentYear"></p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>

@@ -36,24 +36,80 @@
     </nav>
     <div class="hero">
         <picture>
-            <source srcset="images/drinks-small.webp" media="(max-width: 584px)">
-            <source srcset="images/drinks-medium.webp" media="(max-width: 1000px)">
+            <source srcset="images/drinks-small.webp" media="(max-width: 729px)" >
+            <source srcset="images/drinks-medium.webp" media="(max-width: 1000px)" >
             <img src="images/drinks.webp" alt="Sunset at the beach" loading="lazy">
         </picture>
-        <a href="order.html">Get a drink now</a>
+        <a href="order.html">Make your own drink</a>
     </div>
-
+    
     <main id="homeMain">
+        <div class="orders">
+            <h2>Your Orders</h2>
+            <div class="card">
+                <p id="userOrders" >Total Orders: <span id="orders"></span></p>
+            </div>
+        </div>
         <div class="info">
-            <h2>La Jolla Shores</h2>
-            <section >
-                <p>La Jolla stands as a sun-kissed gem, offering a perfect blend of coastal charm and vibrant energy. As the sun gracefully bathes the palm-lined streets in warmth, there's no better way to enhance the experience than by indulging in a refreshing fruit drink. Crafted to complement the sunny weather and embody the spirit of this coastal paradise, our beverages are a perfect companion for those seeking a taste of pure refreshment.</p>
+            <h2>La Jolla Drink</h2>
+            <div class="infoCard" >
+                <p class="description">
+                    Introducing La Jolla, a refreshing fruity concoction inspired by the sun-kissed shores of its namesake. 
+                    Crafted to capture the essence of coastal charm and vibrant energy, this drink is the perfect companion 
+                    for those seeking a taste of pure refreshment. Our carefully curated blend features the succulent flavors 
+                    of blueberries, tropical guava, and sweet peaches. Each sip is a journey to summer, where the sun bathes 
+                    the shores in golden warmth. The antioxidant-rich blueberries, tropical twist of guava, and juicy sweetness 
+                    of peaches create a harmonious medley that embodies the spirit of La Jolla's coastal paradise. Whether you're 
+                    by the pool, on the beach, or simply yearning for a sip of paradise, La Jolla is your go-to drink to savor the 
+                    flavors of coastal bliss in every refreshing drop. Cheers to the vibrant energy and the taste of summer captured in a glass!.
+                </p>
+                <div>
+                    <h3>Ingredients:</h3>
+                    <ul>
+                        <li>Blueberry</li>
+                        <li>Guava</li>
+                        <li>Peach</li>
+                    </ul>
+                </div>
                 <img src="images/chill-drink.webp" alt="La Jolla Shores" loading="lazy">
-            </section>
+                <a href="order.html">Get your drink</a>
+            </div>
+            <h2>The Captain</h2>
+            <div class="infoCard" >
+                <p class="description">Introducing The Captain, a tantalizing elixir crafted to evoke the spirit of adventure and 
+                    the bold essence of a true captain's journey. Inspired by exotic landscapes and the thrill of discovery, this 
+                    drink combines the unique flavors of luscious lychee, crisp green apple, and the zesty kick of kiwi. With each 
+                    sip, embark on a flavor expedition that transports you to distant shores and lush landscapes. The lychee brings 
+                    a sweet and floral note, while the green apple adds a refreshing crispness, and the kiwi contributes a tropical 
+                    zest, creating a delightful symphony for your taste buds. The Captain is more than just a drink; it's an invitation 
+                    to explore new horizons and savor the excitement of the unknown. Whether you're raising a glass in celebration or 
+                    unwinding after a day of conquest, The Captain is your trusted companion, delivering a burst of flavor that captures 
+                    the essence of adventure in every sip. Cheers to The Captain, where every ingredient is a piece of the journey, and 
+                    every drop tells a story of bold flavor and discovery!
+                </p>
+                <div>
+                    <h3>Ingredients:</h3>
+                    <ul>
+                        <li>Leeche</li>
+                        <li>Green Apple</li>
+                        <li>Kiwi</li>
+                    </ul>
+                </div>
+                <img src="images/drink_green.webp" alt="The Captain" loading="lazy">
+                <a href="order.html">Get your drink</a>
+            </div>
+            
         </div>
         <div class="weather">
+            <div class="card">
+                <h3>Carlsbad</h3>
+                <p>Carlsbad, located in Southern California, is a coastal city renowned for its picturesque landscapes and laid-back 
+                    atmosphere. Nestled along the Pacific Ocean, Carlsbad boasts stunning sandy beaches that draw residents and visitors 
+                    alike. The city is known for its charming village atmosphere, offering a blend of boutique shops, delightful 
+                    restaurants, and cultural attractions.</p>
+            </div>
             <h2>Current Weather</h2>
-            <section id="weather">
+            <div id="weather">
                 <div class="currentWeather card">
                     <img src="#" alt="Weather" id="tempImage">
                     <p>Temperature: <span id = "temperature">  </span></p>
@@ -61,15 +117,10 @@
                     <p>Humidity: <span id="tempHum"></span></p>
                 </div>
             
-            </section>
+            </div>
+
         </div>
 
-        <div class="orders">
-            <h2>Your Orders</h2>
-            <section id="userOrders" class="card">
-                <p>Include an information card about the total number of specialty drinks that the current user has submitted from the Order Drink page form. This information should just be stored locally, with the user's agent (browser).</p>
-            </section>
-        </div>
 
     </main>
     <footer>
@@ -79,11 +130,19 @@
             <p>Phone number: 669-721-1488</p>
         </div>
         <div id="social">
-            <a href="https://www.facebook.com"><img src="images/fb.webp" alt="facebook" loading="lazy"></a>
-            <a href="https://www.instagram.com"><img src="images/insta.webp" alt="instagram" loading="lazy"></a>
-            <a href="https://www.youtube.com"><img src="images/youtube.webp" alt="instagram" loading="lazy"></a>
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com"><img src="images/fb.webp" alt="facebook" loading="lazy" class="social"></a>
+            <a href="https://www.instagram.com"><img src="images/insta.webp" alt="instagram" loading="lazy" class="social"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.webp" alt="instagram" loading="lazy" class="social"></a>
         </div>
-        <a href="--">Include a resource/attribution section in the footer that references outside content used in your site.  At minimum that will include references to www.fruityvice.com Links to an external site.and openweathermap.orgLinks to an external site.</a>
+        <div>
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="https://www.fruityvice.com">Fruity Vice</a></li>
+                <li><a href="https://www.openweathermap.org">Open Weather</a></li>
+                <li><a href="https://visitcarlsbad.com/">Visit Carlsbad</a></li>
+            </ul>
+        </div>
         <p id="currentYear"></p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>

@@ -57,17 +57,17 @@ function createForcast(temp){
         <section class="forecastWeather card">
             <section>
             <h3>${daysOfWeek[day1]}</h3>
-            <img src="https://openweathermap.org/img/wn/${temp[0].weather[0].icon}.png">
+            <img src="https://openweathermap.org/img/wn/${temp[0].weather[0].icon}.png" alt"${temp[0].weather[0].description}">
             <p>${temp[0].weather[0].description}</p>
             </section>
             <section>
             <h3>${daysOfWeek[day2]}</h3>
-            <img src="https://openweathermap.org/img/wn/${temp[1].weather[0].icon}.png">
+            <img src="https://openweathermap.org/img/wn/${temp[1].weather[0].icon}.png" alt"${temp[1].weather[0].description}">
             <p>${temp[1].weather[0].description}</p>
             </section>
             <section>
             <h3>${daysOfWeek[day3]}</h3>
-            <img src="https://openweathermap.org/img/wn/${temp[2].weather[0].icon}.png">
+            <img src="https://openweathermap.org/img/wn/${temp[2].weather[0].icon}.png" alt"${temp[2].weather[0].description}">
             <p>${temp[2].weather[0].description}</p>
             </section>
         </section>
@@ -94,3 +94,15 @@ async function fetchForecast(){
 
 fetchCurrent()
 fetchForecast()
+
+
+function getOrderNumber(){
+    let number = localStorage.getItem("orders")
+    if (number != null){
+        document.getElementById("orders").textContent = number;
+    }else{
+        document.getElementById("userOrders").textContent = 'Dont wait any more, get your drink now!'
+    }
+}
+
+getOrderNumber();

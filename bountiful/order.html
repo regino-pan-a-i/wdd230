@@ -38,15 +38,61 @@
         <div>
             <h2>Start your order</h2>
             <form action="thankyou.html" method="get" class="card">
-                <label class="myInput">First Name <input class="textInput" id="firstName" name="firstName" type="text" required placeholder="John"></label>
-                <label class="myInput">Email <input class="textInput" id="email" name="email" type="email" required placeholder="example@email.com"></label>
-                <label class="myInput">Mobile Phone <input class="textInput" id="phone" type="tel" name="telephone"  required placeholder="555-555-5555"></label>
-                <h3>Choose three fruits</h3>
-                <section id="ingredients"></section>
-                <label class="myInput">Special Order Instructions <textarea id="instructions" type="text" name="instructions" placeholder="Type your request here"></textarea> </label>
-                <input type="submit" value="Buy now">
+                <div>
+                    <label class="myInput">First Name <input class="textInput" id="firstName" name="firstName" type="text" pattern="[a-zA-Z]+" title="Please enter a valid name (letters only)" required placeholder="John"></label>
+                    <label class="myInput">Email <input class="textInput" id="email" name="email" type="email" required placeholder="example@email.com"></label>
+                    <label class="myInput">Mobile Phone <input class="textInput" id="phone" type="tel" name="telephone"  required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a valid phone number" placeholder="555-555-5555"></label>
+                </div>
+                <div >
+                    <h3>Choose three fruits</h3>
+                    <div id="ingredients"></div>
+                </div>
+                <div>
+                    <label class="myInput">Special Order Instructions </label>
+                    <textarea id="instructions"  class="textInput" name="instructions" placeholder="Type your request here" minlength="5" maxlength="500"></textarea> 
+                </div>
+                <input  id="submit" type="submit" value="Buy now">
             </form>
             <p>All payment must be done at the pick up stand</p>
+        </div>
+        <div id="combinations">
+            <h2>Try our signature combinations</h2>
+            <div>
+                <h4>La Jolla</h4>
+                <ul>
+                    <li>Blueberry</li>
+                    <li>Guava</li>
+                    <li>Peach</li>
+                </ul>
+                <img src="images/chill-drink.webp" alt="La Jolla Drink" loading="lazy">
+            </div>
+            <div>
+                <h4>The captain</h4>
+                <ul>
+                    <li>Leeche</li>
+                    <li>Green Apple</li>
+                    <li>Kiwi</li>
+                </ul>
+                <img src="images/drink_green.webp" alt="The Captain Drink" loading="lazy">
+            </div>
+            <div>
+                <h4>Lost Pineapple</h4>
+                <ul>
+                    <li>Pineapple</li>
+                    <li>Cranberry</li>
+                    <li>Melon</li>
+                </ul>
+                <img src="images/lost_pinaple.webp" alt="Lost Pineapple Drink" loading="lazy">
+            </div>
+            <div>
+                <h4>Sunny Side</h4>
+                <ul>
+                    <li>Strawberry</li>
+                    <li>Mango</li>
+                    <li>Orange</li>
+                </ul>
+                <img src="images/sunnyside.webp" alt="Sunny Side Drink" loading="lazy">
+            </div>
         </div>
 
     </main>
@@ -57,11 +103,19 @@
             <p>Phone number: 669-721-1488</p>
         </div>
         <div id="social">
-            <a href="https://www.facebook.com"><img src="images/fb.webp" alt="facebook" loading="lazy"></a>
-            <a href="https://www.instagram.com"><img src="images/insta.webp" alt="instagram" loading="lazy"></a>
-            <a href="https://www.youtube.com"><img src="images/youtube.webp" alt="instagram" loading="lazy"></a>
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com"><img src="images/fb.webp" alt="facebook" loading="lazy" class="social"></a>
+            <a href="https://www.instagram.com"><img src="images/insta.webp" alt="instagram" loading="lazy" class="social"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.webp" alt="instagram" loading="lazy" class="social"></a>
         </div>
-        <a href="--">Include a resource/attribution section in the footer that references outside content used in your site.  At minimum that will include references to www.fruityvice.com Links to an external site.and openweathermap.orgLinks to an external site.</a>
+        <div>
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="https://www.fruityvice.com">Fruity Vice</a></li>
+                <li><a href="https://www.openweathermap.org">Open Weather</a></li>
+                <li><a href="https://visitcarlsbad.com/">Visit Carlsbad</a></li>
+            </ul>
+        </div>
         <p id="currentYear"></p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>

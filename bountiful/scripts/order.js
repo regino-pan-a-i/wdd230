@@ -25,6 +25,28 @@ function displayFruits(fruits){
     }
 }
 
-
-
 getFruitData();
+
+
+const ORDER_KEY = "orders"
+
+function setOrderNumber(){
+    
+    // Check to see if the key exists in local storage
+    let currentValue = localStorage.getItem(ORDER_KEY);
+    let order = 1;
+
+    // If the key doesn{t exists, initialize the key to 1
+    if (currentValue != null){
+
+        // it the Jey does exists add one to the current value
+        order = parseInt(currentValue) + 1
+    };
+
+    localStorage.setItem(ORDER_KEY, `${order}`);
+
+}
+
+const submit = document.getElementById('submit')
+submit.addEventListener('click', setOrderNumber);
+

@@ -38,38 +38,49 @@
     <main id="confirmationMain">
         <div>
             <h2>Your order</h2>
-            <section id="confirmation" class="card">
+            <div id="confirmation" class="card card2">
 
                 <p>Thanks <span id="name"></span></p>
                 <p>Your drink will have:</p>
                 <span id="drinkContent"></span>
                 <p>Additional instructions:</p>
                 <span id="instructions"></span>            
-            </section>
+            </div>
         </div>
         <div>
             <h2>Nutritional Info</h2>
-            <section id="nutritionInfo" class="card">
+            <div id="nutritionInfo" class="card card2">
 
-            </section>
+            </div>
         </div>
         <div>
             <h2>Order Details</h2>
-            <section id="details" class="card">
+            <div id="details" class="card card2">
                 <p>Date ordered: <span id="orderDate"></span></p>
                 <p>Hour ordered: <span id="orderHour"></span></p>
                 <p>Email for your order: <span id="orderEmail"></span></p>
+                <p>Your order will be ready in 15 mins</p>
                 <hr>
-                <p>In case of any delays or cancelations call this number <span></span></p>
+                <p>In case of any delays or cancelations call this number </p>
+                <p>669-721-1488</p>
                     
-            </section>
+            </div>
 
         </div>
+        <hr>
         <div>
             <h3>Like our products? Share with your friends</h3>
-            <section id="review" class="card">
-
-            </section>
+            <div id="review" class="card2">
+                <p>Leave a review for a chance to win 5 drinks for free!</p>
+                <div>
+                    <h5>Share on Facebook</h5>
+                    <a href="https://www.facebook.com"><img src="images/fb.webp" alt="facebook" loading="lazy" class="social"></a>
+                </div>
+                <div>
+                    <h5>Share on Instagram</h5>
+                    <a href="https://www.instagram.com"><img src="images/insta.webp" alt="instagram" loading="lazy"  class="social"></a>
+                </div>
+            </div>
         </div>
         
     </main>
@@ -80,11 +91,19 @@
             <p>Phone number: 669-721-1488</p>
         </div>
         <div id="social">
-            <a href="https://www.facebook.com"><img src="images/fb.webp" alt="facebook" loading="lazy"></a>
-            <a href="https://www.instagram.com"><img src="images/insta.webp" alt="instagram" loading="lazy"></a>
-            <a href="https://www.youtube.com"><img src="images/youtube.webp" alt="instagram" loading="lazy"></a>
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com"><img src="images/fb.webp" alt="facebook" loading="lazy" class="social"></a>
+            <a href="https://www.instagram.com"><img src="images/insta.webp" alt="instagram" loading="lazy" class="social"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.webp" alt="instagram" loading="lazy" class="social"></a>
         </div>
-        <a href="--">Include a resource/attribution section in the footer that references outside content used in your site.  At minimum that will include references to www.fruityvice.com Links to an external site.and openweathermap.orgLinks to an external site.</a>
+        <div>
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="https://www.fruityvice.com">Fruity Vice</a></li>
+                <li><a href="https://www.openweathermap.org">Open Weather</a></li>
+                <li><a href="https://visitcarlsbad.com/">Visit Carlsbad</a></li>
+            </ul>
+        </div>
         <p id="currentYear"></p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>

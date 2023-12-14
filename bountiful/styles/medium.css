@@ -1,4 +1,4 @@
-@media screen and (min-width:585px ){
+@media screen and (min-width:730px ){
     /* HEADER */
     header{
         justify-content: left;
@@ -45,28 +45,14 @@
         border-radius: 14%;
     }
     /* MAIN */
-    main{
+    
+
+    /* form{
         display: grid;
-        grid-template-columns: .5fr  1fr;
-        gap: 2%;
-    }
+        grid-template-columns: 1fr 1fr;
 
-    .weather{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .info{
-        grid-column: 2/3;
-        grid-row: 1/5;
-    }
-    .orders{
-        grid-row: 1/2;
-        grid-column: 1/2;
-    }
+    } */
 
-    .info img{
-        width: 60%;
-    }
 
     /* CONFIRMATION MAIN*/
     #confirmationMain{
@@ -84,4 +70,31 @@
         gap: 5%;
     }
     
+    /* ABOUT MAIN */
+    #aboutMain{
+        margin: 2rem;
+    }
+    #story h1{
+        text-align: left;
+    }
+    #story{
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .info{
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+    #carlsbad p{
+        text-align: left;
+    }
+    iframe{
+        margin-top: 5%;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        width: 90%;
+        height: 300px;
+    }
 }
